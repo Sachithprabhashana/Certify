@@ -3,9 +3,9 @@ import { Menu } from 'antd'
 
 export const Navbar:FC = () => {
   return (
-    <div className='navbar' style={{backgroundColor: '#fefefa',height:'10vh'}}>
+    <div className='navbar'>
     <Menu
-     style={{backgroundColor:'	#EEE8AA',alignItems:'center',justifyContent:'flex-end',fontSize:20,height:'10vh'}} items={[
+     items={[
       {
         label:'Home',
         key:'/'

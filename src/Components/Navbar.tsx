@@ -15,7 +15,7 @@ export const Navbar = ({isInline = false}) => {
           navigate(key)
         }
       }}
-       mode={isInline ? 'inline':'horizontal'} style={{backgroundColor:'	#EEE8AA',alignItems:'center',justifyContent:'flex-end',fontSize:20,height:'10vh'}} items={[
+       mode={isInline ? 'inline':'horizontal'} style={{backgroundColor:'#84B501',alignItems:'center',justifyContent:'flex-end',fontSize:22,height:'10vh',fontWeight:'400'}} items={[
         {
           label:'Home',
           key:'/'

@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className='menuIcon' style={{
-        backgroundColor:'#EEE8AA',
+        backgroundColor:'#84B501',
         height:'60px',
         paddingTop:'30px',
         paddingLeft:'30px',
@@ -29,7 +29,7 @@ function App() {
       <span className='headerMenu'>
       <Navbar />
       </span>
-      <Drawer placement='left' open={openMenu} onClose={()=> setOpenMenu(false)} closable={false} bodyStyle={{backgroundColor:'#EEE8AA'}}>
+      <Drawer placement='left' open={openMenu} onClose={()=> setOpenMenu(false)} closable={false} bodyStyle={{backgroundColor:'#84B501'}}>
       <Navbar isInline />
       </Drawer>
 

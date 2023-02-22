@@ -5,7 +5,7 @@ import { Button, Tooltip, Space } from 'antd';
 export const Home:FC = () => {
   return (
     <div style={{display:'flex',justifyContent:'center',paddingTop:'30vh',  
-      backgroundImage: "url(" + "https://img.pikbest.com/backgrounds/20220119/sports-fitness-running-background_6242983.jpg!bw700" + ")",
+      backgroundImage: `url( "https://img.pikbest.com/backgrounds/20220119/sports-fitness-running-background_6242983.jpg!bw700" )`,
       backgroundPosition: 'center',
       backgroundSize:'cover',
       height:'70vh',

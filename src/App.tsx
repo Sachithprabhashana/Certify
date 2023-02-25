@@ -1,6 +1,6 @@
 import Drawer from 'antd/es/drawer';
 import React, { useState } from 'react';
-import './App.css';
+import './App.less';
 import { Navbar } from './Components/Navbar';
 import {Routes,Route} from 'react-router-dom';
 
@@ -44,5 +44,5 @@ function App() {
     </div>
   );
 }
- 
+
 export default App;

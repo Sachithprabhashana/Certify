@@ -20,6 +20,14 @@ module.exports = {
           process: 'process/browser',
         }),
       ],
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            modifyVars: { '@primary-color': '#20A8D8' },
+            javascriptEnabled: true,
+          },
+        },
+      },
     },
   },
 };

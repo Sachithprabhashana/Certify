@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="app config">
+      <change afterPath="$PROJECT_DIR$/src/Components/CertificateBuilder/Certificate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CertificateBuilder/CertificateModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CertificateBuilder/NoSsr.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CertificateBuilder/certificate-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TeamEvent/TeamEvent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/MainRouter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craco.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Home.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -15,6 +27,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -39,7 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify",
+    "last_opened_file_path": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify/src/Components/CertificateBuilder",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,7 +73,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/CertificateBuilder" />
+      <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/layout" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/About" />
+      <recent name="$PROJECT_DIR$/src/pages/Home" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -94,8 +122,16 @@
       <workItem from="1677000631873" duration="1962000" />
       <workItem from="1677029943850" duration="1580000" />
       <workItem from="1677302287523" duration="20000" />
-      <workItem from="1677302332921" duration="1728000" />
+      <workItem from="1677302332921" duration="8664000" />
     </task>
+    <task id="LOCAL-00001" summary="app config">
+      <created>1677304228367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677304228367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="app config" />
+    <option name="LAST_COMMIT_MESSAGE" value="app config" />
   </component>
 </project>

@@ -1,10 +1,10 @@
 // @flow
 import * as React from 'react';
-import {FC, ForwardedRef, useRef} from "react";
+import {FC, useRef} from "react";
 import {MainLayout} from "../../layout/mainLayout/MainLayout";
 import {UserOutlined} from "@ant-design/icons";
 import {Button} from "antd";
-import CertificateModal, {CertificateModalInstance} from "../../Components/CertificateBuilder/CertificateModal";
+import CertificateModal from "../../Components/CertificateBuilder/CertificateModal";
 export const SingleEvent: FC = () => {
     const childRef = useRef<any>();
     return (

@@ -1,4 +1,4 @@
-import React, { ForwardRefRenderFunction, ReactNode, useImperativeHandle, useState } from 'react';
+import React, { ForwardRefRenderFunction, useImperativeHandle, useState } from 'react';
 import {Modal, Spin} from 'antd';
 import { CertificateDto } from '../../Dto/Certificate.dto';
 import {NoSsr} from "./NoSsr";

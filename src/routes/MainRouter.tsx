@@ -6,6 +6,7 @@ import {Contact} from "../Components/Contact";
 import {Login} from "../Components/Login";
 import {SingleEvent} from "../pages/SingleEvent/SingleEvent";
 import {TeamEvent} from "../pages/TeamEvent/TeamEvent";
+import {SingleEventForm} from "../pages/SingleEventForm/SingleEventForm";
 
 const MainRouter: FC = () => {
   return (
@@ -16,6 +17,7 @@ const MainRouter: FC = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/single-event' element={<SingleEvent />} />
+        <Route path='/single-event-form' element={<SingleEventForm />} />
         <Route path='/team-event' element={<TeamEvent />} />
       </Routes>
     </>

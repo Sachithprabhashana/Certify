@@ -2,15 +2,18 @@ import React from 'react';
 import './App.less';
 import {BrowserRouter} from 'react-router-dom';
 import MainRouter from "./routes/MainRouter";
+import {CacheContextWrapper} from "./context/CacheContext";
 
 
 function App() {
   // const [openMenu,setOpenMenu] = useState(false);
   return (
       <>
+          <CacheContextWrapper>
           <BrowserRouter>
               <MainRouter />
           </BrowserRouter>
+          </CacheContextWrapper>
       </>
     // <div className="App">
     //   <div className='menuIcon' style={{

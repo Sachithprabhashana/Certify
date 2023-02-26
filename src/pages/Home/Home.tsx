@@ -24,7 +24,7 @@ export const Home: FC = () => {
             <Tooltip title="Click for single event certificate">
               <Button
                   onClick={() => {
-                      navigate('/single-event');
+                      navigate('/single-event-form');
                   }}
                 type="primary"
                 style={{ fontSize: 30, width: '300px', height: '100px' }}

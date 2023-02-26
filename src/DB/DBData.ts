@@ -4,119 +4,119 @@ import {HouseDto} from "../Dto/House.dto";
 
 export const SingleEventDBData: SingleEventDto[] = [
   {
-    id: '1',
-    name: '100 Meaters',
+    value: '1',
+    label: '100 Meaters',
   },
   {
-    id: '2',
-    name: '100x4',
+    value: '2',
+    label: '100x4',
   },
   {
-    id: '3',
-    name: '200 Meaters',
+    value: '3',
+    label: '200 Meaters',
   },
   {
-    id: '4',
-    name: '200x4',
+    value: '4',
+    label: '200x4',
   },
   {
-    id: '5',
-    name: '400 Meaters',
+    value: '5',
+    label: '400 Meaters',
   },
   {
-    id: '6',
-    name: '400x4',
+    value: '6',
+    label: '400x4',
   },
   {
-    id: '7',
-    name: '1500 Meaters',
+    value: '7',
+    label: '1500 Meaters',
   },
   {
-    id: '8',
-    name: '5000 Meaters',
+    value: '8',
+    label: '5000 Meaters',
   },
   {
-    id: '9',
-    name: 'Marathon',
+    value: '9',
+    label: 'Marathon',
   },
   {
-    id: '10',
-    name: 'Shot Put (Yaguliya)',
+    value: '10',
+    label: 'Shot Put (Yaguliya)',
   },
   {
-    id: '11',
-    name: 'Javelin (hella)',
+    value: '11',
+    label: 'Javelin (hella)',
   },
   {
-    id: '12',
-    name: 'Discus',
+    value: '12',
+    label: 'Discus',
   },
   {
-    id: '13',
-    name: 'Tripple Jump',
+    value: '13',
+    label: 'Tripple Jump',
   },
   {
-    id: '14',
-    name: 'Long Jump(Dura Paneema)',
+    value: '14',
+    label: 'Long Jump(Dura Paneema)',
   },
   {
-    id: '15',
-    name: 'High Jump',
+    value: '15',
+    label: 'High Jump',
   },
   {
-    id: '16',
-    name: 'Pole Jump',
+    value: '16',
+    label: 'Pole Jump',
   },
   {
-    id: '17',
-    name: '50x4',
+    value: '17',
+    label: '50x4',
   },
 ];
 
 export const TeamEventDBData: TeamEventDto[] = [
   {
-    id: '100',
-    name: 'Badminton',
+    value: '100',
+    label: 'Badminton',
   },
   {
-    id: '101',
-    name: 'Elle',
+    value: '101',
+    label: 'Elle',
   },
   {
-    id: '102',
-    name: 'Cricket',
+    value: '102',
+    label: 'Cricket',
   },
   {
-    id: '103',
-    name: 'Carrom',
+    value: '103',
+    label: 'Carrom',
   },
   {
-    id: '104',
-    name: 'Chess',
+    value: '104',
+    label: 'Chess',
   },
   {
-    id: '105',
-    name: 'Volley Ball',
+    value: '105',
+    label: 'Volley Ball',
   },
   {
-    id: '106',
-    name: 'Foot Ball',
+    value: '106',
+    label: 'Foot Ball',
   },
   {
-    id: '107',
-    name: 'Teacwndo',
+    value: '107',
+    label: 'Teacwndo',
   },
   {
-    id: '108',
-    name: 'Swimming',
+    value: '108',
+    label: 'Swimming',
   },
   {
-    id: '109',
-    name: 'Karate',
+    value: '109',
+    label: 'Karate',
   },
 ];
 
-export const AGE_RANGE_JSON = {
+export const AGE_RANGE_JSON: any = {
   '1': ['13', '15', '17', '20'],
   '2': ['13', '15', '17', '20'],
   '3': ['13', '15', '17', '20'],
@@ -147,3 +147,4 @@ export const AGE_RANGE_JSON = {
 };
 
 export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Veenes'];
+export const WINNER_PLACES: string[] = ['1 st', '2 nd', '3 rd'];

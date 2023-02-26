@@ -1,0 +1,11 @@
+.container-sf {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+.mainPage {
+  background-image: url('https://img.pikbest.com/backgrounds/20220119/sports-fitness-running-background_6242983.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 80px);
+}

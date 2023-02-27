@@ -8,20 +8,6 @@ import { CertificateDto } from '../../Dto/Certificate.dto';
 import { getEvents } from '../../Firebase/Firebase';
 import { useNavigate } from 'react-router-dom';
 import { useCache } from '../../context/CacheContext';
-const dataSource = [
-  {
-    key: '1',
-    name: 'Mike',
-    age: 32,
-    address: '10 Downing Street',
-  },
-  {
-    key: '2',
-    name: 'John',
-    age: 42,
-    address: '10 Downing Street',
-  },
-];
 export const Dashboard = () => {
   const [singleEvents, setSingleEvents] = useState<CertificateDto[]>([]);
   const navigate = useNavigate();
@@ -37,7 +23,7 @@ export const Dashboard = () => {
 
   useEffect(() => {
     getEventData().then();
-  }, []);
+  }, [getEventData]);
   const columns = useMemo(
     () => [
       {
@@ -127,7 +113,7 @@ export const Dashboard = () => {
         ),
       },
     ],
-    [],
+    [navigate, setCurrentEvent],
   );
   return (
     <MainLayout>

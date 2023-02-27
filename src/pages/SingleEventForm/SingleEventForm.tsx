@@ -1,15 +1,16 @@
 // @flow
 import * as React from 'react';
-import { MainLayout } from '../../layout/mainLayout/MainLayout';
+import {useCallback, useState} from 'react';
+import {MainLayout} from '../../layout/mainLayout/MainLayout';
 import './SingleEventForm.css';
-import { Button, Card, Form, Input, Select } from 'antd';
-import { useCache } from '../../context/CacheContext';
-import { useCallback, useState } from 'react';
-import { AGE_RANGE_JSON, WINNER_PLACES } from '../../DB/DBData';
-import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import { useNavigate } from 'react-router-dom';
-import { saveEvent } from '../../Firebase/Firebase';
+import {Button, Card, Form, Input, Select} from 'antd';
+import {useCache} from '../../context/CacheContext';
+import {AGE_RANGE_JSON, WINNER_PLACES} from '../../DB/DBData';
+import {MinusCircleOutlined, PlusOutlined} from '@ant-design/icons';
+import {useNavigate} from 'react-router-dom';
+import {saveEvent} from '../../Firebase/Firebase';
 import {CertificateDto} from "../../Dto/Certificate.dto";
+
 export const SingleEventForm = () => {
   const { singleEvents, houseNames, setCurrentEvent } = useCache();
   const [ageOptions, setAgeOptions] = useState<string[]>([]);
@@ -28,15 +29,14 @@ export const SingleEventForm = () => {
       temp.event = singleEvents[index].label;
       temp.type = 'single';
       console.log(temp);
-      const winners = temp.winners.map((v) => {
-        if (v.achievement) {
-          return v;
-        }
-        const obj: any = {...v};
-        obj.achievement = null;
-        return obj;
-      })
-      temp.winners = winners;
+        temp.winners = temp.winners.map((v) => {
+          if (v.achievement) {
+              return v;
+          }
+          const obj: any = {...v};
+          obj.achievement = null;
+          return obj;
+      });
       try {
         setLoading(true);
         await saveEvent(temp);

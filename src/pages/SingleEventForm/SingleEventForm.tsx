@@ -88,7 +88,7 @@ export const SingleEventForm = () => {
               <Form.List name="winners"  rules={[
                   {
                       validator: async (_, names) => {
-                          if (!names || names.length < 1) {
+                          if (!names || names.length < 3 ) {
                               return Promise.reject(new Error('At least 2 winners'));
                           }
                       },

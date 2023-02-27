@@ -6,6 +6,8 @@ import { UserOutlined } from '@ant-design/icons';
 import {Button, Empty} from 'antd';
 import { useReactToPrint } from 'react-to-print';
 import background from '../../Components/CertificateBuilder/certificate-img.png';
+import SignLeft from '../../images/signature1.png'
+import SignRight from '../../images/signature2.png'
 import {useCache} from "../../context/CacheContext";
 export const SingleEvent: FC = () => {
   // const childRef = useRef<CertificateModalInstance>(null);
@@ -56,29 +58,41 @@ export const SingleEvent: FC = () => {
                                 paddingTop: 350,
                                 fontWeight: 'bold',
                                 fontStyle: 'italic',
+                                color:'blue',
                             }}>
                           {v.name}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 20, fontWeight: 'bold', fontStyle: 'italic'}}>
+                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
                           {v.house}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 20, fontWeight: 'bold', fontStyle: 'italic'}}>
+                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
                           {v.place}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 20, fontWeight: 'bold', fontStyle: 'italic'}}>
+                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
                           {currentEvent?.event}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 20, fontWeight: 'bold', fontStyle: 'italic'}}>
+                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
                           {currentEvent?.ageRange}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 60, fontWeight: 'bold', fontStyle: 'italic'}}>
+                            style={{paddingLeft: 260, paddingTop: 56, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
                             {v.achievement ?? '-'}
                         </div>
+
+                      <div style={{flexDirection:'row'}}>
+                      <div
+                          style={{ position:'absolute',paddingLeft: 120, paddingTop: 10, }}>
+                        <img width={150} height={65} src={SignLeft}/>
+                      </div>
+                      <div
+                          style={{ position:'absolute',paddingLeft: 560,  paddingTop: 10}}>
+                        <img width={150} height={65} src={SignRight}/>
+                      </div>
+                      </div>
                     </div>
                 ))}
             </div>

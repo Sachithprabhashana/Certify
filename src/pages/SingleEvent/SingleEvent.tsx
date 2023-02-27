@@ -86,11 +86,11 @@ export const SingleEvent: FC = () => {
                       <div style={{flexDirection:'row'}}>
                       <div
                           style={{ position:'absolute',paddingLeft: 120, paddingTop: 10, }}>
-                        <img width={150} height={65} src={SignLeft}/>
+                        <img alt='left' width={150} height={65} src={SignLeft}/>
                       </div>
                       <div
                           style={{ position:'absolute',paddingLeft: 560,  paddingTop: 10}}>
-                        <img width={150} height={65} src={SignRight}/>
+                        <img alt='right' width={150} height={65} src={SignRight}/>
                       </div>
                       </div>
                     </div>

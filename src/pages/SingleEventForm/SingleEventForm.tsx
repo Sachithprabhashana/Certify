@@ -5,27 +5,50 @@ import './SingleEventForm.css';
 import { Button, Card, Form, Input, Select } from 'antd';
 import { useCache } from '../../context/CacheContext';
 import { useCallback, useState } from 'react';
-import {AGE_RANGE_JSON, WINNER_PLACES} from '../../DB/DBData';
+import { AGE_RANGE_JSON, WINNER_PLACES } from '../../DB/DBData';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import { saveEvent } from '../../Firebase/Firebase';
+import {CertificateDto} from "../../Dto/Certificate.dto";
 export const SingleEventForm = () => {
   const { singleEvents, houseNames, setCurrentEvent } = useCache();
   const [ageOptions, setAgeOptions] = useState<string[]>([]);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState<boolean>(false);
   const onValueChange = useCallback((values: any) => {
     if (values.event) {
       const key: any = values.event;
       setAgeOptions(AGE_RANGE_JSON[key]);
     }
   }, []);
-  const handlerFinish = useCallback((values: any) => {
-      const temp = {...values};
-      const index = singleEvents.findIndex(v => v.value === temp.event);
+  const handlerFinish = useCallback(
+    async (values: any) => {
+      const temp: CertificateDto = { ...values };
+      const index = singleEvents.findIndex((v) => v.value === temp.event);
       temp.event = singleEvents[index].label;
       console.log(temp);
-      setCurrentEvent(temp);
-      navigate('/single-event');
-  }, [navigate, setCurrentEvent, singleEvents]);
+      const winners = temp.winners.map((v) => {
+        if (v.achievement) {
+          return v;
+        }
+        const obj: any = {...v};
+        obj.achievement = null;
+        return obj;
+      })
+      temp.winners = winners;
+      try {
+        setLoading(true);
+        await saveEvent(temp);
+        setCurrentEvent(temp);
+        setLoading(false);
+        navigate('/single-event');
+      } catch (e) {
+        console.log(e);
+        setLoading(false);
+      }
+    },
+    [navigate, setCurrentEvent, singleEvents],
+  );
   return (
     <MainLayout>
       <div className="mainPage">
@@ -85,15 +108,17 @@ export const SingleEventForm = () => {
                 />
               </Form.Item>
 
-              <Form.List name="winners"  rules={[
+              <Form.List
+                name="winners"
+                rules={[
                   {
-                      validator: async (_, names) => {
-                          if (!names || names.length < 3 ) {
-                              return Promise.reject(new Error('At least 2 winners'));
-                          }
-                      },
+                    validator: async (_, names) => {
+                      if (!names || names.length < 3) {
+                        return Promise.reject(new Error('At least 2 winners'));
+                      }
+                    },
                   },
-              ]}>
+                ]}>
                 {(fields, { add, remove }) => (
                   <>
                     {fields.map(({ key, name, ...restField }) => (
@@ -110,57 +135,58 @@ export const SingleEventForm = () => {
                           label={'House'}
                           name={[name, 'house']}
                           rules={[{ required: true, message: 'Missing house' }]}>
-                            <Select
-                                showSearch
-                                // style={{ width: 200 }}
-                                placeholder="Search to Select"
-                                optionFilterProp="children"
-                                filterOption={(input, option) =>
-                                    (option?.label?.toLowerCase() ?? '').includes(input)
-                                }
-                                filterSort={(optionA, optionB) =>
-                                    (optionA?.label ?? '')
-                                        .toLowerCase()
-                                        .localeCompare((optionB?.label ?? '').toLowerCase())
-                                }
-                                options={houseNames.map((v) => ({ label: v, value: v }))}
-                            />
+                          <Select
+                            showSearch
+                            // style={{ width: 200 }}
+                            placeholder="Search to Select"
+                            optionFilterProp="children"
+                            filterOption={(input, option) =>
+                              (option?.label?.toLowerCase() ?? '').includes(input)
+                            }
+                            filterSort={(optionA, optionB) =>
+                              (optionA?.label ?? '')
+                                .toLowerCase()
+                                .localeCompare((optionB?.label ?? '').toLowerCase())
+                            }
+                            options={houseNames.map((v) => ({ label: v, value: v }))}
+                          />
                         </Form.Item>
-                          <Form.Item
-                              {...restField}
-                              label={'Place'}
-                              name={[name, 'place']}
-                              rules={[{ required: true, message: 'Missing house' }]}>
-                              <Select
-                                  showSearch
-                                  // style={{ width: 200 }}
-                                  placeholder="Search to Select"
-                                  optionFilterProp="children"
-                                  filterOption={(input, option) =>
-                                      (option?.label?.toLowerCase() ?? '').includes(input)
-                                  }
-                                  filterSort={(optionA, optionB) =>
-                                      (optionA?.label ?? '')
-                                          .toLowerCase()
-                                          .localeCompare((optionB?.label ?? '').toLowerCase())
-                                  }
-                                  options={WINNER_PLACES.map((v) => ({ label: v, value: v }))}
-                              />
-                          </Form.Item>
-                          <Form.Item
-                              {...restField}
-                              label={'Achievement'}
-                              name={[name, 'achievement']}
-                              rules={[{ required: false, message: 'Missing achievement' }]}>
-                              <Input.TextArea rows={4} placeholder="Achievement" />
-                          </Form.Item>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 10 }}>
-                            {fields.length > 3 ? (
-                                <MinusCircleOutlined
-                                    className="dynamic-delete-button"
-                                    onClick={() => remove(name)}
-                                />
-                            ) : null}
+                        <Form.Item
+                          {...restField}
+                          label={'Place'}
+                          name={[name, 'place']}
+                          rules={[{ required: true, message: 'Missing house' }]}>
+                          <Select
+                            showSearch
+                            // style={{ width: 200 }}
+                            placeholder="Search to Select"
+                            optionFilterProp="children"
+                            filterOption={(input, option) =>
+                              (option?.label?.toLowerCase() ?? '').includes(input)
+                            }
+                            filterSort={(optionA, optionB) =>
+                              (optionA?.label ?? '')
+                                .toLowerCase()
+                                .localeCompare((optionB?.label ?? '').toLowerCase())
+                            }
+                            options={WINNER_PLACES.map((v) => ({ label: v, value: v }))}
+                          />
+                        </Form.Item>
+                        <Form.Item
+                          {...restField}
+                          label={'Achievement'}
+                          name={[name, 'achievement']}
+                          rules={[{ required: false, message: 'Missing achievement' }]}>
+                          <Input.TextArea rows={4} placeholder="Achievement" />
+                        </Form.Item>
+                        <div
+                          style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 10 }}>
+                          {fields.length > 3 ? (
+                            <MinusCircleOutlined
+                              className="dynamic-delete-button"
+                              onClick={() => remove(name)}
+                            />
+                          ) : null}
                         </div>
                       </div>
                     ))}
@@ -174,7 +200,12 @@ export const SingleEventForm = () => {
               </Form.List>
 
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button style={{ width: '100%' }} type="primary" htmlType="submit">
+                <Button
+                  disabled={loading}
+                  loading={loading}
+                  style={{ width: '100%' }}
+                  type="primary"
+                  htmlType="submit">
                   Submit
                 </Button>
               </Form.Item>

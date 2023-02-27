@@ -7,12 +7,14 @@ import {Login} from "../Components/Login";
 import {SingleEvent} from "../pages/SingleEvent/SingleEvent";
 import {TeamEvent} from "../pages/TeamEvent/TeamEvent";
 import {SingleEventForm} from "../pages/SingleEventForm/SingleEventForm";
+import {Dashboard} from "../pages/Dashboard/Dashboard";
 
 const MainRouter: FC = () => {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />

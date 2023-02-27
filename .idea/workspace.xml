@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="DB data added">
-      <change afterPath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.css" afterDir="false" />
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="event save done">
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/DBData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBData.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dto/SingleEvent.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/SingleEvent.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dto/TeamEvent.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/TeamEvent.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/CacheContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/CacheContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/mainLayout/MainLayout.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/mainLayout/MainLayout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/MainRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/MainRouter.tsx" afterDir="false" />
     </list>
@@ -23,9 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="Less File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,7 +49,7 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify/public",
-    "list.type.of.created.stylesheet": "Less",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,7 +74,7 @@
       <recent name="$PROJECT_DIR$/src/pages/Home" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -123,7 +119,8 @@
       <workItem from="1677302287523" duration="20000" />
       <workItem from="1677302332921" duration="12923000" />
       <workItem from="1677389203780" duration="5591000" />
-      <workItem from="1677418096468" duration="14986000" />
+      <workItem from="1677418096468" duration="15660000" />
+      <workItem from="1677474300428" duration="11752000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -181,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677431030622</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="event form added">
+      <created>1677440710424</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677440710424</updated>
+    </task>
+    <task id="LOCAL-00010" summary="event save done">
+      <created>1677481799327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677481799327</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +215,8 @@
     <MESSAGE value="issue fixed" />
     <MESSAGE value="print to react added" />
     <MESSAGE value="DB data added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB data added" />
+    <MESSAGE value="event form added" />
+    <MESSAGE value="event save done" />
+    <option name="LAST_COMMIT_MESSAGE" value="event save done" />
   </component>
 </project>

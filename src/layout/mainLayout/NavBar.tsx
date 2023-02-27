@@ -20,6 +20,10 @@ export const NavBar = ({isInline = false}) => {
             label:'Home',
             key:'/'
           },
+            {
+                label:'Dashboard',
+                key:'/dashboard'
+            },
           {
             label:'Contact Us',
             key:'/contact'

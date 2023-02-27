@@ -26,6 +26,7 @@ export const SingleEventForm = () => {
       const temp: CertificateDto = { ...values };
       const index = singleEvents.findIndex((v) => v.value === temp.event);
       temp.event = singleEvents[index].label;
+      temp.type = 'single';
       console.log(temp);
       const winners = temp.winners.map((v) => {
         if (v.achievement) {

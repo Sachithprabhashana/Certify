@@ -10,4 +10,5 @@ export type CertificateDto = {
     ageRange: string;
     event: string;
     winners: WinnerDto[];
+    type: string;
 }

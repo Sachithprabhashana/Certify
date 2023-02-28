@@ -73,23 +73,23 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '18',
-    label: '60 metres',
+    label: '60 Metres',
   },
   {
     value: '19',
-    label: '80 metres',
+    label: '80 Metres',
   },
   {
     value: '20',
-    label: '80 metres hurdle',
+    label: '80 Metres hurdle',
   },
   {
     value: '21',
-    label: '100 metres hurdle',
+    label: '100 Metres hurdle',
   },
   {
     value: '22',
-    label: '110 metres hurdle',
+    label: '110 Metres hurdle',
   },
 ];
 

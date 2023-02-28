@@ -41,11 +41,11 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '10',
-    label: 'Shot Put (Yaguliya)',
+    label: 'Shot Put',
   },
   {
     value: '11',
-    label: 'Javelin (hella)',
+    label: 'Javelin',
   },
   {
     value: '12',
@@ -57,7 +57,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '14',
-    label: 'Long Jump(Dura Paneema)',
+    label: 'Long Jump',
   },
   {
     value: '15',
@@ -81,15 +81,15 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '20',
-    label: '80 Metres hurdle',
+    label: '80 Metres Hurdle',
   },
   {
     value: '21',
-    label: '100 Metres hurdle',
+    label: '100 Metres Hurdle',
   },
   {
     value: '22',
-    label: '110 Metres hurdle',
+    label: '110 Metres Hurdle',
   },
 ];
 

@@ -7,6 +7,7 @@ export type WinnerDto = {
 }
 
 export type CertificateDto = {
+    key: string;
     ageRange: string;
     event: string;
     winners: WinnerDto[];
@@ -15,6 +16,7 @@ export type CertificateDto = {
 }
 
 export type CertificateTeamDto = {
+    key: string;
     ageRange: string;
     event: string;
     champion: WinnerDto[];

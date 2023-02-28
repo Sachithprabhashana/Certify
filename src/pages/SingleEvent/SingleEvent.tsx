@@ -3,6 +3,7 @@ import * as React from 'react';
 import { FC, useRef } from 'react';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import { UserOutlined } from '@ant-design/icons';
+import './SingleEvent.css';
 import {Button, Empty} from 'antd';
 import { useReactToPrint } from 'react-to-print';
 import background from '../../Components/CertificateBuilder/certificate-img.png';
@@ -19,13 +20,7 @@ export const SingleEvent: FC = () => {
   });
   return (
     <MainLayout>
-        {currentEvent ? <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'column',
-            }}>
+        {currentEvent ? <div className='SingleEvent_MainContainer'>
             <h1>{currentEvent?.event}</h1>
             <Button
                 onClick={() => {
@@ -52,34 +47,32 @@ export const SingleEvent: FC = () => {
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                         }}>
-                        <div
+                        <div className='Student_name'
                             style={{
                                 paddingLeft: 140,
                                 paddingTop: 350,
-                                fontWeight: 'bold',
                                 fontStyle: 'italic',
-                                color:'blue',
                             }}>
                           {v.name}
                         </div>
-                        <div
-                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                        <div className='House_name'
+                            style={{paddingLeft: 260, paddingTop: 18, fontStyle: 'italic'}}>
                           {v.house}
                         </div>
-                        <div
-                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                        <div className='Event_place'
+                            style={{paddingLeft: 260, paddingTop: 18, fontStyle: 'italic'}}>
                           {v.place}
                         </div>
-                        <div
-                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                        <div className='Event_type'
+                            style={{paddingLeft: 260, paddingTop: 17, fontStyle: 'italic'}}>
                           {currentEvent?.event}
                         </div>
-                        <div
-                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                        <div className='Age_range'
+                            style={{paddingLeft: 260, paddingTop: 17, fontStyle: 'italic'}}>
                           {currentEvent?.ageRange}
                         </div>
-                        <div
-                            style={{paddingLeft: 260, paddingTop: 56, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                        <div className='Achievement'
+                            style={{paddingLeft: 260, paddingTop: 56, fontStyle: 'italic'}}>
                             {v.achievement ?? '-'}
                         </div>
 

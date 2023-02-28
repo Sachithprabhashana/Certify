@@ -38,7 +38,7 @@ export const Home: FC = () => {
             <Tooltip title="Click for team event certificates">
               <Button
                   onClick={() => {
-                      navigate('/team-event');
+                      navigate('/team-event-form');
                   }}
                 type="primary"
                 style={{ fontSize: 30, width: '300px', height: '100px' }}

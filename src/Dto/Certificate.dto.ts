@@ -7,8 +7,21 @@ export type WinnerDto = {
 }
 
 export type CertificateDto = {
+    key: string;
     ageRange: string;
     event: string;
     winners: WinnerDto[];
     type: string;
+    year: string;
+}
+
+export type CertificateTeamDto = {
+    key: string;
+    ageRange: string;
+    event: string;
+    champion: WinnerDto[];
+    runnersUp: WinnerDto[];
+    thirdPlace: WinnerDto[];
+    type: string;
+    year: string;
 }

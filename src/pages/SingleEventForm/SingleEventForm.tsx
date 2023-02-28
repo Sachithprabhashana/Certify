@@ -28,6 +28,8 @@ export const SingleEventForm = () => {
       const index = singleEvents.findIndex((v) => v.value === temp.event);
       temp.event = singleEvents[index].label;
       temp.type = 'single';
+      const d = new Date();
+      temp.year = d.getFullYear().toString();
       console.log(temp);
         temp.winners = temp.winners.map((v) => {
           if (v.achievement) {

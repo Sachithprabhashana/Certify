@@ -5,7 +5,7 @@ import {HouseDto} from "../Dto/House.dto";
 export const SingleEventDBData: SingleEventDto[] = [
   {
     value: '1',
-    label: '100 Meaters',
+    label: '100 Metres',
   },
   {
     value: '2',
@@ -13,7 +13,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '3',
-    label: '200 Meaters',
+    label: '200 Metres',
   },
   {
     value: '4',
@@ -21,7 +21,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '5',
-    label: '400 Meaters',
+    label: '400 Metres',
   },
   {
     value: '6',
@@ -29,11 +29,11 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '7',
-    label: '1500 Meaters',
+    label: '1500 Metres',
   },
   {
     value: '8',
-    label: '5000 Meaters',
+    label: '5000 Metres',
   },
   {
     value: '9',
@@ -146,5 +146,7 @@ export const AGE_RANGE_JSON: any = {
   '109': ['12', '14', '16', '18', '20'],
 };
 
-export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Veenes'];
-export const WINNER_PLACES: string[] = ['1 st', '2 nd', '3 rd'];
+export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Venus'];
+export const WINNER_PLACES: string[] = ['1st', '2nd', '3rd'];
+export const TEAM_WINNER_PLACES: string[] = ['Champion', 'RunnersUp', '3rd Place'];
+

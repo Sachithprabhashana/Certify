@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.SingleEvent_MainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*.Student_name{*/
+/*    font-family: 'Pacifico';*/
+/*}*/
+/*.House_name{*/
+/*    font-family: 'Pacifico';*/
+/*}*/
+/*.Event_place{*/
+/*    font-family: 'Pacifico';*/
+/*}*/
+/*.Event_type{*/
+/*    font-family: 'Pacifico';*/
+/*}*/
+/*.Age_range{*/
+/*    font-family: 'Pacifico';*/
+/*}*/
+/*.Achievement{*/
+/*    font-family: 'Pacifico';*/
+
+/*}*/

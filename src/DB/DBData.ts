@@ -71,6 +71,26 @@ export const SingleEventDBData: SingleEventDto[] = [
     value: '17',
     label: '50x4',
   },
+  {
+    value: '18',
+    label: '60 metres',
+  },
+  {
+    value: '19',
+    label: '80 metres',
+  },
+  {
+    value: '20',
+    label: '80 metres hurdle',
+  },
+  {
+    value: '21',
+    label: '100 metres hurdle',
+  },
+  {
+    value: '22',
+    label: '110 metres hurdle',
+  },
 ];
 
 export const TeamEventDBData: TeamEventDto[] = [
@@ -134,6 +154,11 @@ export const AGE_RANGE_JSON: any = {
   '15': ['12', '14', '16', '18', '20'],
   '16': ['12', '14', '16', '18', '20'],
   '17': ['12'],
+  '18': ['12', '14', '16', '18', '20'],
+  '19': ['12', '14', '16', '18', '20'],
+  '20': ['12', '14', '16', '18', '20'],
+  '21': ['12', '14', '16', '18', '20'],
+  '22': ['12', '14', '16', '18', '20'],
   '100': ['13', '15', '17', '20'],
   '101': ['20'],
   '102': ['20'],

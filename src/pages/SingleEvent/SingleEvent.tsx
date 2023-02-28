@@ -54,32 +54,32 @@ export const SingleEvent: FC = () => {
                         }}>
                         <div
                             style={{
+                                fontFamily:'Shadows Into Light',
                                 paddingLeft: 140,
                                 paddingTop: 350,
                                 fontWeight: 'bold',
                                 fontStyle: 'italic',
-                                color:'blue',
                             }}>
                           {v.name}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                            style={{fontFamily:'Shadows Into Light', paddingLeft: 260, paddingTop: 14, fontWeight: 'bold', fontStyle: 'italic'}}>
                           {v.house}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 18, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                            style={{fontFamily:'Shadows Into Light',paddingLeft: 260, paddingTop: 13, fontWeight: 'bold', fontStyle: 'italic'}}>
                           {v.place}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                            style={{fontFamily:'Shadows Into Light',paddingLeft: 260, paddingTop: 13, fontWeight: 'bold', fontStyle: 'italic'}}>
                           {currentEvent?.event}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 17, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                            style={{fontFamily:'Shadows Into Light',paddingLeft: 260, paddingTop: 14, fontWeight: 'bold', fontStyle: 'italic'}}>
                           {currentEvent?.ageRange}
                         </div>
                         <div
-                            style={{paddingLeft: 260, paddingTop: 56, fontWeight: 'bold',color:'blue', fontStyle: 'italic'}}>
+                            style={{fontFamily:'Shadows Into Light',paddingLeft: 260, paddingTop: 52, fontWeight: 'bold', fontStyle: 'italic'}}>
                             {v.achievement ?? '-'}
                         </div>
 

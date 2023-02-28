@@ -1,6 +1,11 @@
 import {initializeApp} from 'firebase/app';
 import {collection, getDocs, getFirestore, setDoc, doc, deleteDoc} from 'firebase/firestore';
 import {CertificateDto, CertificateTeamDto} from "../Dto/Certificate.dto";
+import {getAuth,signInWithEmailAndPassword,signOut} from 'firebase/auth'
+import {LoginDto} from "../Dto/Login.dto";
+
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyA9a1bbQZ_UReNqitBSDIwr4fDEmQNrSbM",
     authDomain: "certify-codes.firebaseapp.com",
@@ -13,6 +18,16 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+const auth = getAuth(app)
+
+export const login = async (values: LoginDto) => {
+    await signInWithEmailAndPassword(auth,values.email,values.password);
+}
+
+export const logout = async () => {
+    await signOut(auth);
+}
+
 export const getEvents = async () => {
     const citiesCol = collection(db, 'events');
     const citySnapshot = await getDocs(citiesCol);

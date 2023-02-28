@@ -1,13 +1,25 @@
-import { Menu } from 'antd';
+import { Menu} from 'antd';
 import { useNavigate } from 'react-router-dom';
+import {useCallback} from "react";
+import { logout} from "../../Firebase/Firebase";
 
 export const NavBar = ({ isInline = false }) => {
   const navigate = useNavigate();
+  const handlerLogout = useCallback(async ()=> {
+        try{
+          await logout()
+          navigate('/login')
+        }catch (e){
+          console.log(e);
+        }
+
+  },[navigate])
   return (
     <div className="navbar" style={{ backgroundColor: '#fefefa', height: '10vh' }}>
       <Menu
         onClick={({ key }) => {
-          if (key === 'login') {
+          if (key === 'logout') {
+            handlerLogout().then()
           } else {
             navigate(key);
           }
@@ -25,7 +37,7 @@ export const NavBar = ({ isInline = false }) => {
         items={[
           {
             label: 'Home',
-            key: '/',
+            key: '/home',
           },
           {
             label: 'Single Event Dashboard',
@@ -44,10 +56,18 @@ export const NavBar = ({ isInline = false }) => {
             key: '/about',
           },
           {
-            label: 'Login',
-            key: '/login',
+            label: 'Logout',
+            key: 'logout',
           },
+          // {
+          //   label: (<Dropdown menu={{ items:[{key:'1',label:(<Button type={'text'}>Logout</Button>)}] }} placement="bottom" arrow>
+          //     <Avatar size={64} icon={<UserOutlined />} />
+          //   </Dropdown>),
+          //   key: '/login',
+          //   disabled:true
+          // },
         ]}></Menu>
+
     </div>
   );
 };

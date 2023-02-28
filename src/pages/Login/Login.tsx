@@ -1,13 +1,22 @@
 import React, {FC, useCallback} from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Form, Input,Card } from 'antd';
+import { Button, Form, Input,Card,message } from 'antd';
 import './Login.css';
+import {login} from "../../Firebase/Firebase";
+import {useNavigate} from "react-router-dom";
 
 export const Login:FC = () => {
-
-    const onFinish = useCallback((values:any)=> {
+ const navigate = useNavigate()
+    const onFinish = useCallback(async (values:any)=> {
         console.log(values)
-    },[])
+        try{
+            await login(values);
+            message.success('Successful');
+            navigate('/')
+        }catch (e:any){
+            message.error(e.message);
+        }
+    },[navigate])
   return (
 
         <div className="mainPageLogin">
@@ -20,7 +29,7 @@ export const Login:FC = () => {
                     onFinish={onFinish}
                 >
                     <Form.Item
-                        name="username"
+                        name="email"
                         rules={[{ required: true, message: 'Please input your Username!' }]}
                     >
                         <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />

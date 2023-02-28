@@ -41,11 +41,11 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '10',
-    label: 'Shot Put (Yaguliya)',
+    label: 'Shot Put',
   },
   {
     value: '11',
-    label: 'Javelin (hella)',
+    label: 'Javelin',
   },
   {
     value: '12',
@@ -57,7 +57,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '14',
-    label: 'Long Jump(Dura Paneema)',
+    label: 'Long Jump',
   },
   {
     value: '15',

@@ -14,12 +14,13 @@ export const NavBar = ({ isInline = false }) => {
         }}
         mode={isInline ? 'inline' : 'horizontal'}
         style={{
-          backgroundColor: '#84B501',
+          backgroundColor: 'rgb(191, 0, 26)',
           alignItems: 'center',
           justifyContent: 'flex-end',
           fontSize: 22,
           height: '10vh',
           fontWeight: '400',
+          color:'white',
         }}
         items={[
           {

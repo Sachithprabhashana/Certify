@@ -147,6 +147,6 @@ export const AGE_RANGE_JSON: any = {
 };
 
 export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Venus'];
-export const WINNER_PLACES: string[] = ['1 st', '2 nd', '3 rd'];
+export const WINNER_PLACES: string[] = ['1st', '2nd', '3rd'];
 export const TEAM_WINNER_PLACES: string[] = ['Champion', 'RunnersUp', '3rd Place'];
 

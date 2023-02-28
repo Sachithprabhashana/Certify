@@ -1,6 +1,6 @@
 import {initializeApp} from 'firebase/app';
 import {collection, getDocs, getFirestore, setDoc, doc} from 'firebase/firestore';
-import {CertificateDto} from "../Dto/Certificate.dto";
+import {CertificateDto, CertificateTeamDto} from "../Dto/Certificate.dto";
 const firebaseConfig = {
     apiKey: "AIzaSyA9a1bbQZ_UReNqitBSDIwr4fDEmQNrSbM",
     authDomain: "certify-codes.firebaseapp.com",
@@ -20,6 +20,11 @@ export const getEvents = async () => {
 }
 export const saveEvent = async (values: CertificateDto) => {
     const citiesCol = collection(db, 'events');
+    const cityRef = doc(citiesCol, Date.now().toString());
+    await setDoc(cityRef, values);
+}
+export const saveTeamEvent = async (values: CertificateTeamDto) => {
+    const citiesCol = collection(db, 'teamEvents');
     const cityRef = doc(citiesCol, Date.now().toString());
     await setDoc(cityRef, values);
 }

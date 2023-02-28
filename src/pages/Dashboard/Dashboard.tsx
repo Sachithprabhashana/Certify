@@ -15,7 +15,7 @@ export const Dashboard = () => {
   const getEventData = useCallback(async () => {
     try {
       const data = await getEvents();
-      setSingleEvents(data as any);
+      setSingleEvents( data as any);
     } catch (e) {
       console.log(e);
     }
@@ -45,7 +45,7 @@ export const Dashboard = () => {
         key: 'winners',
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
-          const index = temp?.findIndex((v) => v.place === '1 st');
+          const index = temp?.findIndex((v) => v.place === '1st');
           const user = temp[index].name;
           const achievement = temp[index].achievement;
           const house = temp[index].house;
@@ -64,7 +64,7 @@ export const Dashboard = () => {
         key: 'winners',
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
-          const index = temp?.findIndex((v) => v.place === '2 nd');
+          const index = temp?.findIndex((v) => v.place === '2nd');
           const user = temp[index].name;
           const achievement = temp[index].achievement;
           const house = temp[index].house;
@@ -83,7 +83,7 @@ export const Dashboard = () => {
         key: 'winners',
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
-          const index = temp?.findIndex((v) => v.place === '3 rd');
+          const index = temp?.findIndex((v) => v.place === '3rd');
           const user = temp[index].name;
           const achievement = temp[index].achievement;
           const house = temp[index].house;
@@ -120,7 +120,7 @@ export const Dashboard = () => {
       <div className="mainPage">
         <div className="container-dashboard">
           <Card style={{ width: '100%' }}>
-            <Table dataSource={singleEvents} columns={columns} />
+            <Table dataSource={singleEvents} columns={columns} pagination={{ pageSize: 4}} />
           </Card>
         </div>
       </div>

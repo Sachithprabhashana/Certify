@@ -48,7 +48,7 @@ export const Dashboard = () => {
         title: 'Event Name',
         dataIndex: 'event',
         key: 'event',
-        width: 200,
+        width: 150,
       },
       {
         title: 'Age Range',
@@ -64,9 +64,9 @@ export const Dashboard = () => {
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
           const index = temp?.findIndex((v) => v.place === '1st');
-          const user = temp[index].name;
-          const achievement = temp[index].achievement;
-          const house = temp[index].house;
+          const user = temp[index]?.name;
+          const achievement = temp[index]?.achievement;
+          const house = temp[index]?.house;
           return (
             <Descriptions column={1}>
               <Descriptions.Item label="Name">{user}</Descriptions.Item>
@@ -83,9 +83,9 @@ export const Dashboard = () => {
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
           const index = temp?.findIndex((v) => v.place === '2nd');
-          const user = temp[index].name;
-          const achievement = temp[index].achievement;
-          const house = temp[index].house;
+          const user = temp[index]?.name;
+          const achievement = temp[index]?.achievement;
+          const house = temp[index]?.house;
           return (
             <Descriptions column={1}>
               <Descriptions.Item label="Name">{user}</Descriptions.Item>
@@ -102,9 +102,9 @@ export const Dashboard = () => {
         render: (value: string, record: CertificateDto) => {
           const temp = record?.winners ?? [];
           const index = temp?.findIndex((v) => v.place === '3rd');
-          const user = temp[index].name;
-          const achievement = temp[index].achievement;
-          const house = temp[index].house;
+          const user = temp[index]?.name;
+          const achievement = temp[index]?.achievement;
+          const house = temp[index]?.house;
           return (
             <Descriptions column={1}>
               <Descriptions.Item label="Name">{user}</Descriptions.Item>

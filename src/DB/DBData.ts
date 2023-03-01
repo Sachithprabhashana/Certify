@@ -41,11 +41,11 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '10',
-    label: 'Shot Put (Yaguliya)',
+    label: 'Shot Put',
   },
   {
     value: '11',
-    label: 'Javelin (hella)',
+    label: 'Javelin',
   },
   {
     value: '12',
@@ -57,7 +57,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '14',
-    label: 'Long Jump(Dura Paneema)',
+    label: 'Long Jump',
   },
   {
     value: '15',
@@ -70,6 +70,26 @@ export const SingleEventDBData: SingleEventDto[] = [
   {
     value: '17',
     label: '50x4',
+  },
+  {
+    value: '18',
+    label: '60 Metres',
+  },
+  {
+    value: '19',
+    label: '80 Metres',
+  },
+  {
+    value: '20',
+    label: '80 Metres Hurdle',
+  },
+  {
+    value: '21',
+    label: '100 Metres Hurdle',
+  },
+  {
+    value: '22',
+    label: '110 Metres Hurdle',
   },
 ];
 
@@ -134,6 +154,11 @@ export const AGE_RANGE_JSON: any = {
   '15': ['12', '14', '16', '18', '20'],
   '16': ['12', '14', '16', '18', '20'],
   '17': ['12'],
+  '18': ['12', '14', '16', '18', '20'],
+  '19': ['12', '14', '16', '18', '20'],
+  '20': ['12', '14', '16', '18', '20'],
+  '21': ['12', '14', '16', '18', '20'],
+  '22': ['12', '14', '16', '18', '20'],
   '100': ['13', '15', '17', '20'],
   '101': ['20'],
   '102': ['20'],

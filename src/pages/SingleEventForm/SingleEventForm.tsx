@@ -61,7 +61,7 @@ export const SingleEventForm = () => {
               layout={'horizontal'}
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
-              initialValues={{ score: [{ zues: 0 }] }}
+              initialValues={{ score: [{ zues: 0,venus:0,athens:0 }] }}
               autoComplete="off"
               onFinish={handlerFinish}
               onValuesChange={onValueChange}>
@@ -205,6 +205,22 @@ export const SingleEventForm = () => {
                   <>
                     {fields.map(({ key, name, ...restField }) => (
                       <div key={key}>
+                          <Form.Item
+                              required
+                              {...restField}
+                              label={'Score for Athens'}
+                              name={[name, 'athens']}
+                              rules={[{ required: true, message: 'Missing Zues score' }]}>
+                              <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
+                          </Form.Item>
+                          <Form.Item
+                              required
+                              {...restField}
+                              label={'Score for Venus'}
+                              name={[name, 'venus']}
+                              rules={[{ required: true, message: 'Missing Zues score' }]}>
+                              <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
+                          </Form.Item>
                         <Form.Item
                           required
                           {...restField}
@@ -213,6 +229,7 @@ export const SingleEventForm = () => {
                           rules={[{ required: true, message: 'Missing Zues score' }]}>
                           <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
                         </Form.Item>
+
                       </div>
                     ))}
                   </>

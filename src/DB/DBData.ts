@@ -115,7 +115,7 @@ export const TeamEventDBData: TeamEventDto[] = [
     label: 'Karate',
   },
 ];
-
+export const AGE_RANGES = ['12', '14', '16', '18', '20'];
 export const AGE_RANGE_JSON: any = {
   '1': ['13', '15', '17', '20'],
   '2': ['13', '15', '17', '20'],
@@ -147,6 +147,6 @@ export const AGE_RANGE_JSON: any = {
 };
 
 export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Venus'];
-export const WINNER_PLACES: string[] = ['1st', '2nd', '3rd'];
+export const WINNER_PLACES: string[] = ['1st', '2nd', '3rd', 'Participation'];
 export const TEAM_WINNER_PLACES: string[] = ['Champion', 'RunnersUp', '3rd Place'];
 

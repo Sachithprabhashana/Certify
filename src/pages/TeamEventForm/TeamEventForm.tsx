@@ -4,7 +4,7 @@ import './TeamEventForm.css';
 import { Button, Card, Form, Input, Select } from 'antd';
 import { useCache } from '../../context/CacheContext';
 import { useCallback, useState } from 'react';
-import { AGE_RANGE_JSON, TEAM_WINNER_PLACES } from '../../DB/DBData';
+import {AGE_RANGES, TEAM_WINNER_PLACES} from '../../DB/DBData';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import { CertificateDto, CertificateTeamDto, WinnerDto } from '../../Dto/Certificate.dto';
@@ -16,8 +16,7 @@ export const TeamEventForm = () => {
   const navigate = useNavigate();
   const onValueChange = useCallback((values: any) => {
     if (values.event) {
-      const key: any = values.event;
-      setAgeOptions(AGE_RANGE_JSON[key]);
+      setAgeOptions(AGE_RANGES);
     }
   }, []);
   const clearAchievementValue = useCallback((arr: WinnerDto[]) => {

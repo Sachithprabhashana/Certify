@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="team dashboard  done">
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="issue fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/TeamEventDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/TeamEventDashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,9 @@
       <workItem from="1677418096468" duration="15660000" />
       <workItem from="1677474300428" duration="12808000" />
       <workItem from="1677557289659" duration="12065000" />
-      <workItem from="1677641400357" duration="1670000" />
+      <workItem from="1677641400357" duration="1859000" />
+      <workItem from="1677644352536" duration="202000" />
+      <workItem from="1677689630616" duration="955000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -224,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677641886348</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="issue fixed">
+      <created>1677643743679</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677643743679</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +256,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app config" />
     <MESSAGE value="pdf reader added" />
-    <MESSAGE value="issue fixed" />
     <MESSAGE value="print to react added" />
     <MESSAGE value="DB data added" />
     <MESSAGE value="event form added" />
@@ -252,6 +263,7 @@
     <MESSAGE value="history done" />
     <MESSAGE value="team form  done" />
     <MESSAGE value="team dashboard  done" />
-    <option name="LAST_COMMIT_MESSAGE" value="team dashboard  done" />
+    <MESSAGE value="issue fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="issue fixed" />
   </component>
 </project>

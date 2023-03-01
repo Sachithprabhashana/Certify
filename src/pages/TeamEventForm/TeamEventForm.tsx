@@ -50,6 +50,7 @@ export const TeamEventForm = () => {
           type: temp.type,
           year: temp.year,
           key: temp.key,
+          score: temp.score,
           winners: [...temp?.champion, ...temp?.runnersUp, ...temp?.thirdPlace],
         };
         setCurrentEvent(newEvent);

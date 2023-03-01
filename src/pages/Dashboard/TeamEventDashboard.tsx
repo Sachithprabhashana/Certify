@@ -101,6 +101,7 @@ export const TeamEventDashboard = () => {
                   type: temp.type,
                   year: temp.year,
                   key: temp.key,
+                  score: temp.score,
                   winners: [
                     ...temp?.champion,
                     ...temp?.runnersUp,

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="team form  done">
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/TeamEventDashboard.tsx" afterDir="false" />
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="team dashboard  done">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_02_2023_11_28_pm_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Firebase/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/Firebase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/DBData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/MainRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/MainRouter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,8 @@
       <workItem from="1677389203780" duration="5591000" />
       <workItem from="1677418096468" duration="15660000" />
       <workItem from="1677474300428" duration="12808000" />
-      <workItem from="1677557289659" duration="10707000" />
+      <workItem from="1677557289659" duration="12065000" />
+      <workItem from="1677641400357" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -216,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677564503338</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="team dashboard  done">
+      <created>1677568784820</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677568784820</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +247,7 @@
     <MESSAGE value="event save done" />
     <MESSAGE value="history done" />
     <MESSAGE value="team form  done" />
-    <option name="LAST_COMMIT_MESSAGE" value="team form  done" />
+    <MESSAGE value="team dashboard  done" />
+    <option name="LAST_COMMIT_MESSAGE" value="team dashboard  done" />
   </component>
 </project>

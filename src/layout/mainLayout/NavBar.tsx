@@ -2,6 +2,7 @@ import { Menu} from 'antd';
 import { useNavigate } from 'react-router-dom';
 import {useCallback} from "react";
 import { logout} from "../../Firebase/Firebase";
+import Logo from '../../images/logo.png';
 
 export const NavBar = ({ isInline = false }) => {
   const navigate = useNavigate();
@@ -16,6 +17,9 @@ export const NavBar = ({ isInline = false }) => {
   },[navigate])
   return (
     <div className="navbar" style={{ backgroundColor: '#fefefa', height: '10vh' }}>
+      <div style={{position:'absolute',padding:15}}>
+        <img src={Logo} alt="logo" width={110} height={110} />
+      </div>
       <Menu
         onClick={({ key }) => {
           if (key === 'logout') {

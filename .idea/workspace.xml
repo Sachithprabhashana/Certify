@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="issue fixed">
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="score added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dto/Certificate.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/TeamEventDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/TeamEventDashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEventForm/SingleEventForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TeamEventForm/TeamEventForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/DBData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Firebase/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/Firebase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,9 @@
       <workItem from="1677557289659" duration="12065000" />
       <workItem from="1677641400357" duration="1859000" />
       <workItem from="1677644352536" duration="202000" />
-      <workItem from="1677689630616" duration="955000" />
+      <workItem from="1677689630616" duration="1062000" />
+      <workItem from="1677694256747" duration="3339000" />
+      <workItem from="1677725216373" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677643743679</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="score added">
+      <created>1677690677471</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677690677471</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +271,7 @@
     <MESSAGE value="team form  done" />
     <MESSAGE value="team dashboard  done" />
     <MESSAGE value="issue fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue fixed" />
+    <MESSAGE value="score added" />
+    <option name="LAST_COMMIT_MESSAGE" value="score added" />
   </component>
 </project>

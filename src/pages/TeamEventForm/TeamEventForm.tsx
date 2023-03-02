@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import './TeamEventForm.css';
-import { Button, Card, Form, Input, Select } from 'antd';
+import {Button, Card, Form, Input, InputNumber, Select} from 'antd';
 import { useCache } from '../../context/CacheContext';
 import { useCallback, useState } from 'react';
 import {AGE_RANGES, TEAM_WINNER_PLACES} from '../../DB/DBData';
@@ -50,6 +50,7 @@ export const TeamEventForm = () => {
           type: temp.type,
           year: temp.year,
           key: temp.key,
+          score: temp.score,
           winners: [...temp?.champion, ...temp?.runnersUp, ...temp?.thirdPlace],
         };
         setCurrentEvent(newEvent);
@@ -74,6 +75,7 @@ export const TeamEventForm = () => {
               layout={'horizontal'}
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
+              initialValues={{ score: [{ zues: 0,venus:0,athens:0 }] }}
               autoComplete="off"
               onFinish={handlerFinish}
               onValuesChange={onValueChange}>
@@ -382,6 +384,42 @@ export const TeamEventForm = () => {
                       </Button>
                     </Form.Item>
                   </>
+                )}
+              </Form.List>
+
+              <Form.List name="score">
+                {(fields) => (
+                    <>
+                      {fields.map(({ key, name, ...restField }) => (
+                          <div key={key}>
+                            <Form.Item
+                                required
+                                {...restField}
+                                label={'Score for Athens'}
+                                name={[name, 'athens']}
+                                rules={[{ required: true, message: 'Missing Zues score' }]}>
+                              <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
+                            </Form.Item>
+                            <Form.Item
+                                required
+                                {...restField}
+                                label={'Score for Venus'}
+                                name={[name, 'venus']}
+                                rules={[{ required: true, message: 'Missing Zues score' }]}>
+                              <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
+                            </Form.Item>
+                            <Form.Item
+                                required
+                                {...restField}
+                                label={'Score for Zues'}
+                                name={[name, 'zues']}
+                                rules={[{ required: true, message: 'Missing Zues score' }]}>
+                              <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
+                            </Form.Item>
+
+                          </div>
+                      ))}
+                    </>
                 )}
               </Form.List>
 

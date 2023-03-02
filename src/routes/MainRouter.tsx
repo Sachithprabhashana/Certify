@@ -11,6 +11,7 @@ import {TeamEventForm} from "../pages/TeamEventForm/TeamEventForm";
 import {Dashboard} from "../pages/Dashboard/Dashboard";
 import {TeamEventDashboard} from "../pages/Dashboard/TeamEventDashboard";
 import {useCache} from "../context/CacheContext";
+import {EventScore} from "../pages/Score/EventScore";
 
 
 const MainRouter: FC = () => {
@@ -32,6 +33,8 @@ const MainRouter: FC = () => {
         <Route path='/single-event-form' element={<SingleEventForm />} />
         <Route path='/team-event' element={<TeamEvent />} />
         <Route path='/team-event-form' element={<TeamEventForm/>} />
+        <Route path='/event-score' element={<EventScore/>} />
+
       </Routes>
     </>
   );

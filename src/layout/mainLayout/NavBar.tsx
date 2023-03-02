@@ -40,21 +40,25 @@ export const NavBar = ({ isInline = false }) => {
             key: '/home',
           },
           {
-            label: 'Single Event Dashboard',
+            label: 'Single Events',
             key: '/dashboard',
           },
           {
-            label: 'Team Event Dashboard',
+            label: 'Team Events',
             key: '/dashboard-team',
           },
           {
-            label: 'Contact Us',
-            key: '/contact',
+            label: 'Scores',
+            key: '/event-score',
           },
-          {
-            label: 'About Us',
-            key: '/about',
-          },
+          // {
+          //   label: 'Contact Us',
+          //   key: '/contact',
+          // },
+          // {
+          //   label: 'About Us',
+          //   key: '/about',
+          // },
           {
             label: 'Logout',
             key: 'logout',

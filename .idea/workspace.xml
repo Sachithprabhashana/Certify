@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="team dashboard  done">
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="score added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Firebase/Firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/Firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/mainLayout/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Score/EventScore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Score/EventScore.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kaveendraperera/Documents/kaveendra-dev/Certify/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify/public",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -69,7 +72,7 @@
       <recent name="$PROJECT_DIR$/src/pages/Home" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -117,7 +120,11 @@
       <workItem from="1677418096468" duration="15660000" />
       <workItem from="1677474300428" duration="12808000" />
       <workItem from="1677557289659" duration="12065000" />
-      <workItem from="1677641400357" duration="1670000" />
+      <workItem from="1677641400357" duration="1859000" />
+      <workItem from="1677644352536" duration="202000" />
+      <workItem from="1677689630616" duration="1062000" />
+      <workItem from="1677694256747" duration="3339000" />
+      <workItem from="1677725216373" duration="2931000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -224,7 +231,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677641886348</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="issue fixed">
+      <created>1677643743679</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677643743679</updated>
+    </task>
+    <task id="LOCAL-00017" summary="score added">
+      <created>1677690677471</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677690677471</updated>
+    </task>
+    <task id="LOCAL-00018" summary="score added">
+      <created>1677726466776</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1677726466776</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +272,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app config" />
     <MESSAGE value="pdf reader added" />
-    <MESSAGE value="issue fixed" />
     <MESSAGE value="print to react added" />
     <MESSAGE value="DB data added" />
     <MESSAGE value="event form added" />
@@ -252,6 +279,8 @@
     <MESSAGE value="history done" />
     <MESSAGE value="team form  done" />
     <MESSAGE value="team dashboard  done" />
-    <option name="LAST_COMMIT_MESSAGE" value="team dashboard  done" />
+    <MESSAGE value="issue fixed" />
+    <MESSAGE value="score added" />
+    <option name="LAST_COMMIT_MESSAGE" value="score added" />
   </component>
 </project>

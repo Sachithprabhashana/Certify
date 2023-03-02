@@ -48,6 +48,10 @@ export const NavBar = ({ isInline = false }) => {
             key: '/dashboard-team',
           },
           {
+            label: 'Score Dashboard',
+            key: '/event-score',
+          },
+          {
             label: 'Contact Us',
             key: '/contact',
           },

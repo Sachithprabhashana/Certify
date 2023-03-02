@@ -3,7 +3,6 @@ import { collection, getDocs, getFirestore, setDoc, doc, deleteDoc } from 'fireb
 import { CertificateDto, CertificateTeamDto } from '../Dto/Certificate.dto';
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { LoginDto } from '../Dto/Login.dto';
-import { HOUSE_JSON } from '../DB/DBData';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyA9a1bbQZ_UReNqitBSDIwr4fDEmQNrSbM',
@@ -35,9 +34,9 @@ const handlerScoreData = (docs: any[]) => {
     const id = sEvent.id;
     const detail = sEvent.data();
     const scoreData = detail.score[0];
-    const venus = scoreData?.[HOUSE_JSON.venus];
-    const athens = scoreData?.[HOUSE_JSON.athens];
-    const zues = scoreData?.[HOUSE_JSON.zues];
+    const venus = scoreData?.['venus'];
+    const athens = scoreData?.['athens'];
+    const zues = scoreData?.['zues'];
     venusScore = venusScore + venus;
     athensScore = athensScore + athens;
     zuesScore = zuesScore + zues;
@@ -50,8 +49,8 @@ const handlerScoreData = (docs: any[]) => {
       athens,
       zues,
     });
-    return { allEvents, venusScore, athensScore, zuesScore };
   }
+  return { allEvents, venusScore, athensScore, zuesScore };
 };
 export const getScoreData = async () => {
   const eventsCol = collection(db, 'events');

@@ -82,19 +82,19 @@ export const EventScore: FC = () => {
               paddingBottom: '20px',
             }}>
             <Card
-              style={{ backgroundColor: 'rgb(191, 0, 26)' }}
+              style={{ backgroundColor: 'red' }}
               headStyle={{ color: 'white' }}
               title={'Athens'}>
               <h1 style={{ color: 'white' }}>{total?.athensScore}</h1>
             </Card>
             <Card
-              style={{ backgroundColor: 'rgb(191, 0, 26)' }}
-              headStyle={{ color: 'white' }}
+              style={{ backgroundColor: '#FFFF00' }}
+              headStyle={{ color: 'black' }}
               title={'Venus'}>
-              <h1 style={{ color: 'white' }}>{total?.venusScore}</h1>
+              <h1 style={{ color: 'black' }}>{total?.venusScore}</h1>
             </Card>
             <Card
-              style={{ backgroundColor: 'rgb(191, 0, 26)' }}
+              style={{ backgroundColor: 'blue' }}
               headStyle={{ color: 'white' }}
               title={'Zues'}>
               <h1 style={{ color: 'white' }}>{total?.zuesScore}</h1>

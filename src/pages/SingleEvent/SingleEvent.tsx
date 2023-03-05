@@ -7,11 +7,9 @@ import './SingleEvent.css';
 import { Button, Empty } from 'antd';
 import { useReactToPrint } from 'react-to-print';
 import background from '../../Components/CertificateBuilder/certificate-img.png';
-import SignLeft from '../../images/signature1.png';
-import SignRight from '../../images/signature2.png';
+
 import { useCache } from '../../context/CacheContext';
 export const SingleEvent: FC = () => {
-  // const childRef = useRef<CertificateModalInstance>(null);
   const { currentEvent } = useCache();
   const printPreviewRef = useRef<any>();
   const handlePrint = useReactToPrint({
@@ -51,73 +49,78 @@ export const SingleEvent: FC = () => {
                 <div
                   className="Student_name"
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
-                    paddingTop: 350,
+                    paddingTop: 345,
                     fontStyle: 'italic',
-                    fontWeight: 'bold',
+                    fontSize:'20px',
                   }}>
                   {v.name}
                 </div>
                 <div
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 14,
-                    fontWeight: 'bold',
+                    paddingTop: 10,
                     fontStyle: 'italic',
+                    fontSize:'20px',
+
                   }}>
                   {v.house}
                 </div>
                 <div
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 13,
-                    fontWeight: 'bold',
+                    paddingTop: 12,
                     fontStyle: 'italic',
+                    fontSize:'20px',
+
                   }}>
                   {v.place}
                 </div>
                 <div
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 13,
-                    fontWeight: 'bold',
                     fontStyle: 'italic',
+                    fontSize:'20px',
+
                   }}>
                   {currentEvent?.event}
                 </div>
                 <div
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 14,
-                    fontWeight: 'bold',
                     fontStyle: 'italic',
+                    fontSize:'20px',
+
                   }}>
                   {currentEvent?.ageRange}
                 </div>
                 <div
                   style={{
-                    fontFamily: 'Shadows Into Light',
+                    fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 52,
-                    fontWeight: 'bold',
+                    paddingTop: 48,
                     fontStyle: 'italic',
+                    fontSize:'20px',
+
                   }}>
                   {v.achievement ?? '-'}
                 </div>
 
-                <div style={{ flexDirection: 'row' }}>
-                  <div style={{ position: 'absolute', paddingLeft: 120, paddingTop: 10 }}>
-                    <img alt="left" width={150} height={65} src={SignLeft} />
-                  </div>
-                  <div style={{ position: 'absolute', paddingLeft: 560, paddingTop: 10 }}>
-                    <img alt="right" width={150} height={65} src={SignRight} />
-                  </div>
-                </div>
+                {/*<div style={{ flexDirection: 'row' }}>*/}
+                {/*  <div style={{ position: 'absolute', paddingLeft: 120, paddingTop: 10 }}>*/}
+                {/*    <img alt="left" width={150} height={65} src={SignLeft} />*/}
+                {/*  </div>*/}
+                {/*  <div style={{ position: 'absolute', paddingLeft: 560, paddingTop: 10 }}>*/}
+                {/*    <img alt="right" width={150} height={65} src={SignRight} />*/}
+                {/*  </div>*/}
+                {/*</div>*/}
               </div>
             ))}
           </div>

@@ -51,22 +51,11 @@ export const SingleEvent: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
-                    paddingTop: 345,
+                    paddingTop: 347,
                     fontStyle: 'italic',
                     fontSize:'20px',
                   }}>
                   {v.name}
-                </div>
-                <div
-                  style={{
-                    fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 10,
-                    fontStyle: 'italic',
-                    fontSize:'20px',
-
-                  }}>
-                  {v.house}
                 </div>
                 <div
                   style={{
@@ -77,13 +66,25 @@ export const SingleEvent: FC = () => {
                     fontSize:'20px',
 
                   }}>
-                  {v.place}
+                  {v.house}
                 </div>
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 13,
+                    paddingTop: 11,
+                    fontStyle: 'italic',
+                    fontSize:'20px',
+
+                  }}>
+                  {v.place}
+                </div>
+                <div
+                  style={{
+
+                    fontFamily: 'Shantell Sans',
+                    paddingLeft: 260,
+                    paddingTop: 12,
                     fontStyle: 'italic',
                     fontSize:'20px',
 
@@ -94,7 +95,7 @@ export const SingleEvent: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 14,
+                    paddingTop: 13,
                     fontStyle: 'italic',
                     fontSize:'20px',
 

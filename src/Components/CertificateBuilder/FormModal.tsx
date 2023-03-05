@@ -1,15 +1,18 @@
 import React, {FC, useCallback, useState} from 'react';
 import {Button, Form, Input, InputNumber, Modal, Select} from "antd";
-import {MinusCircleOutlined, PlusOutlined, TeamOutlined, UserOutlined} from "@ant-design/icons";
+import {MinusCircleOutlined, PlusOutlined} from "@ant-design/icons";
 import {AGE_RANGES, WINNER_PLACES} from "../../DB/DBData";
 import {CertificateDto} from "../../Dto/Certificate.dto";
 import {saveEvent} from "../../Firebase/Firebase";
 import {useCache} from "../../context/CacheContext";
 import {useNavigate} from "react-router-dom";
 
+type Props = {
+    visible: boolean;
+    setVisible: (value:boolean)=> void;
+}
 
-export const FormModal:FC = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+export const FormModal:FC<Props> = ({visible,setVisible}) => {
     const { singleEvents, houseNames, setCurrentEvent } = useCache();
     const [ageOptions, setAgeOptions] = useState<string[]>([]);
     const navigate = useNavigate();
@@ -20,14 +23,10 @@ export const FormModal:FC = () => {
         }
     }, []);
 
-    const showModal = () => {
-        setIsModalOpen(true);
-    };
+    const handleCancel = useCallback(()=> {
+        setVisible(false)
+    },[setVisible])
 
-
-    const handleCancel = () => {
-        setIsModalOpen(false);
-    };
 
     const handlerFinish = useCallback(
         async (values: any) => {
@@ -63,26 +62,8 @@ export const FormModal:FC = () => {
     return(
         <div>
         {/*test component*/}
-    <div>
-        <Button
-            onClick={showModal}
-            type="primary"
-            danger
-            style={{ fontSize: 20, width: '200px', height: '60px' }}
-            icon={<UserOutlined />}>
-            Single Event
-        </Button>
-        <Button
-            onClick={showModal}
-            type="primary"
-            danger
-            style={{ fontSize: 20, width: '200px', height: '60px' }}
-            icon={<TeamOutlined />}>
-            Team Event
-        </Button>
 
-    </div>
-        <Modal title="Add new event" open={isModalOpen} onCancel={handleCancel}>
+        <Modal footer={null} title="Add new event" open={visible} onCancel={handleCancel}>
 
                     <Form
                         name="basic"

@@ -1,10 +1,13 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import { TeamOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Tooltip, Space } from 'antd';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import {useNavigate} from "react-router-dom";
+import {FormModal} from "../../Components/CertificateBuilder/FormModal";
 
 export const Home: FC = () => {
+
+
     const navigate = useNavigate();
   return (
     <MainLayout>
@@ -19,6 +22,9 @@ export const Home: FC = () => {
           height: '60vh',
           backgroundRepeat: 'no-repeat',
         }}>
+
+
+
         <Space direction="vertical">
           <Space wrap>
             <Tooltip title="Click for single event certificate">
@@ -48,6 +54,7 @@ export const Home: FC = () => {
             </Tooltip>
           </Space>
         </Space>
+            <FormModal />
       </div>
     </MainLayout>
   );

@@ -8,11 +8,11 @@ import {useCache} from "../../context/CacheContext";
 import {useNavigate} from "react-router-dom";
 
 type Props = {
-    visible: boolean;
-    setVisible: (value:boolean)=> void;
+    singleVisible: boolean;
+    setSingleVisible: (value:boolean)=> void;
 }
 
-export const FormModal:FC<Props> = ({visible,setVisible}) => {
+export const SingleFormModal:FC<Props> = ({singleVisible,setSingleVisible}) => {
     const { singleEvents, houseNames, setCurrentEvent } = useCache();
     const [ageOptions, setAgeOptions] = useState<string[]>([]);
     const navigate = useNavigate();
@@ -24,8 +24,8 @@ export const FormModal:FC<Props> = ({visible,setVisible}) => {
     }, []);
 
     const handleCancel = useCallback(()=> {
-        setVisible(false)
-    },[setVisible])
+        setSingleVisible(false)
+    },[setSingleVisible])
 
 
     const handlerFinish = useCallback(
@@ -63,7 +63,7 @@ export const FormModal:FC<Props> = ({visible,setVisible}) => {
         <div>
         {/*test component*/}
 
-        <Modal footer={null} title="Add new event" open={visible} onCancel={handleCancel}>
+        <Modal footer={null} title="Add new single event" open={singleVisible} onCancel={handleCancel}>
 
                     <Form
                         name="basic"

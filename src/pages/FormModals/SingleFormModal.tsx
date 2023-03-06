@@ -10,9 +10,11 @@ import {useNavigate} from "react-router-dom";
 type Props = {
     singleVisible: boolean;
     setSingleVisible: (value:boolean)=> void;
+    values?:any;
+    editable?:boolean;
 }
 
-export const SingleFormModal:FC<Props> = ({singleVisible,setSingleVisible}) => {
+export const SingleFormModal:FC<Props> = ({singleVisible,setSingleVisible,values,editable}) => {
     const { singleEvents, houseNames, setCurrentEvent } = useCache();
     const [ageOptions, setAgeOptions] = useState<string[]>([]);
     const navigate = useNavigate();
@@ -70,7 +72,7 @@ export const SingleFormModal:FC<Props> = ({singleVisible,setSingleVisible}) => {
                         layout={'horizontal'}
                         labelCol={{ span: 8 }}
                         wrapperCol={{ span: 16 }}
-                        initialValues={{ score: [{ zues: 0,venus:0,athens:0 }] }}
+                        initialValues={(editable && values)? values : { score: [{ zues: 0,venus:0,athens:0 }] }}
                         autoComplete="off"
                         onFinish={handlerFinish}
                         onValuesChange={onValueChange}>

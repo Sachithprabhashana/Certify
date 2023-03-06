@@ -82,7 +82,7 @@ export const EventScore: FC = () => {
               paddingBottom: '20px',
             }}>
             <Card
-              style={{ backgroundColor: 'red' }}
+              style={{ backgroundColor: 'red'}}
               headStyle={{ color: 'white' }}
               title={'Athens'}>
               <h1 style={{ color: 'white' }}>{total?.athensScore}</h1>

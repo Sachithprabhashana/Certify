@@ -4,14 +4,24 @@ import { CertificateDto, CertificateTeamDto } from '../Dto/Certificate.dto';
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { LoginDto } from '../Dto/Login.dto';
 
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyA9a1bbQZ_UReNqitBSDIwr4fDEmQNrSbM',
+//   authDomain: 'certify-codes.firebaseapp.com',
+//   projectId: 'certify-codes',
+//   storageBucket: 'certify-codes.appspot.com',
+//   messagingSenderId: '855127998456',
+//   appId: '1:855127998456:web:94aa34557458a84bb5600d',
+//   measurementId: 'G-RSKH79WH2Q',
+// };
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyA9a1bbQZ_UReNqitBSDIwr4fDEmQNrSbM',
-  authDomain: 'certify-codes.firebaseapp.com',
-  projectId: 'certify-codes',
-  storageBucket: 'certify-codes.appspot.com',
-  messagingSenderId: '855127998456',
-  appId: '1:855127998456:web:94aa34557458a84bb5600d',
-  measurementId: 'G-RSKH79WH2Q',
+  apiKey: "AIzaSyCSPTE_zGK64oJSs2ccaoOCjbW_N256_MA",
+  authDomain: "certify-5baff.firebaseapp.com",
+  projectId: "certify-5baff",
+  storageBucket: "certify-5baff.appspot.com",
+  messagingSenderId: "441398045232",
+  appId: "1:441398045232:web:ce2916a757f524ddff9bf5",
+  measurementId: "G-JYQP9RQK9P"
 };
 
 const app = initializeApp(firebaseConfig);

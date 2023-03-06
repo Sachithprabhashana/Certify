@@ -33,6 +33,7 @@ export const Home: FC = () => {
                         setSingleVisible(true);
                     }}
                     type="primary"
+                    danger
                     style={{ fontSize: 20, width: '300px', height: '80px' }}
                     icon={<UserOutlined />}>
                     Single Event
@@ -48,6 +49,7 @@ export const Home: FC = () => {
                     }
                     }
                     type="primary"
+                    danger
                     style={{ fontSize: 20, width: '300px', height: '80px' }}
                     icon={<TeamOutlined />}>
                     Team Event

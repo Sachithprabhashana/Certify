@@ -1,13 +1,21 @@
-import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
-import { Card, Space, Table } from 'antd';
+import React, {FC, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {Button, Card, Space, Table} from 'antd';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import { CertificateTeamDto } from '../../Dto/Certificate.dto';
 import { getScoreData } from '../../Firebase/Firebase';
 
+import {useReactToPrint} from "react-to-print";
+import {ScorePrintPreview} from "./ScorePrintPreview";
+
 export const EventScore: FC = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(false);
   const [data, setData] = useState<any>();
   const [total, setTotal] = useState<any>();
+    const printPreviewRef = useRef<any>();
+    const handlePrint = useReactToPrint({
+        content: () => printPreviewRef.current,
+        pageStyle: ' @page { size: A4 portrait; margin: 5;}',
+    });
   const getData = useCallback(async () => {
     try {
       setLoading(true);
@@ -85,23 +93,32 @@ export const EventScore: FC = () => {
               style={{ backgroundColor: 'red' }}
               headStyle={{ color: 'white' }}
               title={'Athens'}>
-              <h1 style={{ color: 'white' }}>{total?.athensScore}</h1>
+              <h1 style={{ color: 'white',textAlign:'center' }}>{total?.athensScore}</h1>
             </Card>
             <Card
               style={{ backgroundColor: '#FFFF00' }}
               headStyle={{ color: 'black' }}
               title={'Venus'}>
-              <h1 style={{ color: 'black' }}>{total?.venusScore}</h1>
+              <h1 style={{ color: 'black',textAlign:'center'  }}>{total?.venusScore}</h1>
             </Card>
             <Card
               style={{ backgroundColor: 'blue' }}
               headStyle={{ color: 'white' }}
               title={'Zues'}>
-              <h1 style={{ color: 'white' }}>{total?.zuesScore}</h1>
+              <h1 style={{ color: 'white',textAlign:'center'  }}>{total?.zuesScore}</h1>
             </Card>
           </Space>
+
           <Card style={{ width: '100%' }}>
             <Table
+                footer={()=> (<div style={{display:"flex",justifyContent:'flex-end'}}><Button
+                    type="primary"
+                    style={{ fontSize: 15, width: '100px', height: '30px' }}
+                    // onClick={()=> setVisible(true)}
+                    onClick={handlePrint}
+                >
+                    Print
+                </Button></div>)}
               loading={loading}
               dataSource={data}
               columns={columns}
@@ -109,6 +126,7 @@ export const EventScore: FC = () => {
             />
           </Card>
         </div>
+          <ScorePrintPreview total={total} data={data} printPreviewRef={printPreviewRef} />
       </div>
     </MainLayout>
   );

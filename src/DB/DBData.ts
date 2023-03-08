@@ -91,6 +91,10 @@ export const SingleEventDBData: SingleEventDto[] = [
     value: '22',
     label: '110 Metres Hurdle',
   },
+  {
+    value: '23',
+    label: '800 Metres',
+  },
 ];
 
 export const TeamEventDBData: TeamEventDto[] = [

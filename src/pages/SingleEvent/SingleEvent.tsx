@@ -74,7 +74,7 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 13,
-                    paddingBottom: 1,
+                    paddingBottom: -1,
 
                     fontStyle: 'italic',
                     fontSize:'20px',

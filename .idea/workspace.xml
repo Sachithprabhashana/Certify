@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="score added">
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" afterDir="false" />
     </list>
@@ -124,7 +124,8 @@
       <workItem from="1677694256747" duration="3339000" />
       <workItem from="1677725216373" duration="3673000" />
       <workItem from="1678029479332" duration="1566000" />
-      <workItem from="1678092512854" duration="196000" />
+      <workItem from="1678092512854" duration="406000" />
+      <workItem from="1678264183959" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -259,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677728651817</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixes">
+      <created>1678092767263</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678092767263</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +296,7 @@
     <MESSAGE value="team dashboard  done" />
     <MESSAGE value="issue fixed" />
     <MESSAGE value="score added" />
-    <option name="LAST_COMMIT_MESSAGE" value="score added" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>

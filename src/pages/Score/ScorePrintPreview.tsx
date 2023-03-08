@@ -4,11 +4,10 @@ import { Card, Divider, Space, Table} from "antd";
 import Logo from "../../images/logo.png";
 
 type Props = {
-    printPreviewRef:any;
     data: any;
     total:any;
 }
-export const ScorePrintPreview:FC <Props> = ({printPreviewRef,data,total}) => {
+export const ScorePrintPreview:FC <Props> = ({data,total}) => {
 
     const columns = useMemo(
         () => [
@@ -52,7 +51,7 @@ export const ScorePrintPreview:FC <Props> = ({printPreviewRef,data,total}) => {
         return d.getFullYear().toString();
     },[])
     return(
-        <div ref={printPreviewRef}>
+        <div>
             <div style={{display:"flex",justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <img src={Logo} alt="logo" width={110} height={110} />
                 <h4>PRINCE SPORTSMEET {year}</h4>

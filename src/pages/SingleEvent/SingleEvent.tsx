@@ -52,6 +52,7 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
                     paddingTop: 346,
+                    paddingBottom: 2,
                     fontStyle: 'italic',
                     fontSize:'20px',
                   }}>
@@ -62,6 +63,7 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 14,
+                    paddingBottom: 2,
                     fontStyle: 'italic',
                     fontSize:'20px',
 
@@ -73,6 +75,8 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 13,
+                    paddingBottom: 1,
+
                     fontStyle: 'italic',
                     fontSize:'20px',
 

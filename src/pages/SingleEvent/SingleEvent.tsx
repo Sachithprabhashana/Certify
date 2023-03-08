@@ -41,7 +41,7 @@ export const SingleEvent: FC = () => {
                 key={index}
                 style={{
                   backgroundImage: `url(${background})`,
-                  height: '8.25in',
+                  height: '8.27in',
                   width: '11.69in',
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
@@ -53,7 +53,7 @@ export const SingleEvent: FC = () => {
                     paddingLeft: 140,
                     paddingTop: 342,
                     fontStyle: 'italic',
-                    fontSize:'20px',
+                    fontSize: '20px',
                   }}>
                   {v.name}
                 </div>
@@ -62,10 +62,9 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 14,
-                    paddingBottom: 2,
+                    // paddingBottom: 2,
                     fontStyle: 'italic',
-                    fontSize:'20px',
-
+                    fontSize: '20px',
                   }}>
                   {v.house}
                 </div>
@@ -74,23 +73,20 @@ export const SingleEvent: FC = () => {
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 13,
-                    paddingBottom: -1,
+                    // paddingBottom: -1,
 
                     fontStyle: 'italic',
-                    fontSize:'20px',
-
+                    fontSize: '20px',
                   }}>
                   {v.place}
                 </div>
                 <div
                   style={{
-
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
                     paddingTop: 11,
                     fontStyle: 'italic',
-                    fontSize:'20px',
-
+                    fontSize: '20px',
                   }}>
                   {currentEvent?.event}
                 </div>
@@ -100,8 +96,7 @@ export const SingleEvent: FC = () => {
                     paddingLeft: 260,
                     paddingTop: 13,
                     fontStyle: 'italic',
-                    fontSize:'20px',
-
+                    fontSize: '20px',
                   }}>
                   {currentEvent?.ageRange}
                 </div>
@@ -111,8 +106,7 @@ export const SingleEvent: FC = () => {
                     paddingLeft: 260,
                     paddingTop: 50,
                     fontStyle: 'italic',
-                    fontSize:'20px',
-
+                    fontSize: '20px',
                   }}>
                   {v.achievement ?? '-'}
                 </div>

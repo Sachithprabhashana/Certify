@@ -1,21 +1,15 @@
-import React, {FC, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {FC, useCallback, useEffect, useMemo, useState} from 'react';
 import {Button, Card, Space, Table} from 'antd';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import { CertificateTeamDto } from '../../Dto/Certificate.dto';
 import { getScoreData } from '../../Firebase/Firebase';
-
-import {useReactToPrint} from "react-to-print";
-import {ScorePrintPreview} from "./ScorePrintPreview";
+import {EventScoreModal} from "./EventScoreModal";
 
 export const EventScore: FC = () => {
     const [loading, setLoading] = useState<boolean>(false);
+    const [visible,setVisible] = useState<boolean>(false)
   const [data, setData] = useState<any>();
   const [total, setTotal] = useState<any>();
-    const printPreviewRef = useRef<any>();
-    const handlePrint = useReactToPrint({
-        content: () => printPreviewRef.current,
-        pageStyle: ' @page { size: A4 portrait; margin: 5;}',
-    });
   const getData = useCallback(async () => {
     try {
       setLoading(true);
@@ -114,8 +108,8 @@ export const EventScore: FC = () => {
                 footer={()=> (<div style={{display:"flex",justifyContent:'flex-end'}}><Button
                     type="primary"
                     style={{ fontSize: 15, width: '100px', height: '30px' }}
-                    // onClick={()=> setVisible(true)}
-                    onClick={handlePrint}
+                    onClick={()=> setVisible(true)}
+                    // onClick={handlePrint}
                 >
                     Print
                 </Button></div>)}
@@ -126,7 +120,7 @@ export const EventScore: FC = () => {
             />
           </Card>
         </div>
-          <ScorePrintPreview total={total} data={data} printPreviewRef={printPreviewRef} />
+          <EventScoreModal visible={visible} setVisible={setVisible} data={data} total={total} />
       </div>
     </MainLayout>
   );

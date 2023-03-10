@@ -23,7 +23,7 @@ export const Login:FC = () => {
             <div style={{padding:'30px 40px 0px 40px',position:'absolute',alignItems:'center'}}>
                 <h4>" මෙම සහතික පත්‍ර නිකුත් කිරීමේ මාර්ගගත පද්ධතිය ර/කුමර විද්‍යාලය - නවනගරය,රත්නපුරය . සතු දේපලකි. එය අනවසරයෙන් භාවිතයට ගැනීම , පිටපත් කර ගැනීම, අන්සතු කිරීම සහ ඒ ආශ්‍රිතව කරන සියලු අනවසර අවභාවිතාවන්ට එරහිව 2007 අංක 24 දරන පරිගණක අපරාද පනත යටතේ සහ 2003 අංක 36 දරන බුද්ධ්මය දේපල පනත යන නීතිමය ප්‍රතිපාදනයන්ට අනුව කටයුතු කරනු ඇත."
                 </h4>
-                <h4>" Online system for issuing these certificates R/Kumara Vidyalaya - Nava nagaraya, Ratnapura. Owned property. Its unauthorized use, copying, misappropriation and all related unauthorized use will be dealt with in accordance with the provisions of the Computer Crime Act No. 24 of 2007 and the Intellectual Property Act No. 36 of 2003."</h4>
+                <h4>This Online Certificate Issuance System is the property of R/Kumara Vidyalaya - NewTown, Ratnapura. Unauthorized use, copying, misappropriation and all related misuses are prohibited under the Computer Crime Act No. 24 of 2007 and 2003 No. 36 will be dealt with in accordance with the legal provisions of the Intellectual Property Act."</h4>
             </div>
           <div className="container-login">
 

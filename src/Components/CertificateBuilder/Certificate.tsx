@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { StyleSheet, Document, Page, View, Image, Text } from '@react-pdf/renderer';
-import cert from "./certificate-img.png"
+import cert from "./certificate.jpg"
 const styles = StyleSheet.create({
     body: {
         flex: 1,

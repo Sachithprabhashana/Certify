@@ -6,7 +6,7 @@ import { UserOutlined } from '@ant-design/icons';
 import './SingleEvent.css';
 import { Button, Empty } from 'antd';
 import { useReactToPrint } from 'react-to-print';
-import background from '../../Components/CertificateBuilder/certificate-img.png';
+import background from '../../Components/CertificateBuilder/certificate.jpg';
 
 import { useCache } from '../../context/CacheContext';
 export const SingleEvent: FC = () => {

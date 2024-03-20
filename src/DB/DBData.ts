@@ -139,7 +139,7 @@ export const TeamEventDBData: TeamEventDto[] = [
     label: 'Karate',
   },
 ];
-export const AGE_RANGES = ['Open','12', '14', '16', '18', '20'];
+export const AGE_RANGES = ['Open','12','13', '14','15', '16','17', '18','19', '20','21'];
 export const AGE_RANGE_JSON: any = {
   '1': ['13', '15', '17', '20'],
   '2': ['13', '15', '17', '20'],

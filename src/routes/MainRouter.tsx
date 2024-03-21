@@ -12,6 +12,8 @@ import {Dashboard} from "../pages/Dashboard/Dashboard";
 import {TeamEventDashboard} from "../pages/Dashboard/TeamEventDashboard";
 import {useCache} from "../context/CacheContext";
 import {EventScore} from "../pages/Score/EventScore";
+import { Participation } from '../pages/Participation/Participation';
+import { ParticipationCertificate } from '../pages/Participation/ParticipationCertificate';
 
 
 const MainRouter: FC = () => {
@@ -30,10 +32,12 @@ const MainRouter: FC = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/single-event' element={<SingleEvent />} />
+        <Route path='/participation-certificate' element={<ParticipationCertificate />} />
         <Route path='/single-event-form' element={<SingleEventForm />} />
         <Route path='/team-event' element={<TeamEvent />} />
         <Route path='/team-event-form' element={<TeamEventForm/>} />
         <Route path='/event-score' element={<EventScore/>} />
+        <Route path='/participation' element={<Participation/>} />
 
       </Routes>
     </>

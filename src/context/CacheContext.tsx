@@ -8,10 +8,13 @@ import {getAuth,onAuthStateChanged} from "firebase/auth";
 
 export type CacheContextData = {
   singleEvents: SingleEventDto[];
+  participations?: CertificateDto;
   teamEvents: TeamEventDto[];
   houseNames: HouseDto[];
   currentEvent?: CertificateDto;
   setCurrentEvent: (value: CertificateDto) => void;
+  setParticipations: (value: CertificateDto) => void;
+
 
   user:any;
 };
@@ -26,6 +29,7 @@ export const useCache = () => {
 
 export const CacheContextWrapper = (props: any) => {
   const [singleEvents, setSingleEvents] = useState<SingleEventDto[]>([]);
+  const [participations, setParticipations] = useState<CertificateDto>();
   const [teamEvents, setTeamEvents] = useState<TeamEventDto[]>([]);
   const [currentEvent, setCurrentEvent] = useState<CertificateDto>();
   const [user,setUser] = useState<any>();
@@ -57,8 +61,10 @@ export const CacheContextWrapper = (props: any) => {
       value={{
           user,
         singleEvents,
+        participations,
         teamEvents,
         setCurrentEvent,
+        setParticipations,
         currentEvent,
         houseNames: HOUSE_NAMES,
       }}>

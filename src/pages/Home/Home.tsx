@@ -47,6 +47,20 @@ export const Home: FC = () => {
               </Button>
             </Tooltip>
           </Space>
+
+          <Space wrap>
+            <Tooltip title="Click for team event certificates">
+              <Button
+                  onClick={() => {
+                      navigate('/participation');
+                  }}
+                type="primary"
+                style={{ fontSize: 30, width: '300px', height: '100px' }}
+                icon={<TeamOutlined />}>
+                Participation
+              </Button>
+            </Tooltip>
+          </Space>
         </Space>
       </div>
     </MainLayout>

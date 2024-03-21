@@ -1,20 +1,17 @@
 // @flow
 import * as React from 'react';
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import '../SingleEvent/SingleEvent.css'
-import { Button, Card, Form, Input, InputNumber, Select } from 'antd';
+import { Button, Card, Form, Input, Select } from 'antd';
 import { useCache } from '../../context/CacheContext';
-import { AGE_RANGES, WINNER_PLACES } from '../../DB/DBData';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
-import { saveEvent } from '../../Firebase/Firebase';
 import { CertificateDto } from '../../Dto/Certificate.dto';
 
 export const Participation = () => {
-  const { singleEvents, houseNames, setCurrentEvent , setParticipations} = useCache();
+  const { setParticipations} = useCache();
   const navigate = useNavigate();
-  const [loading, setLoading] = useState<boolean>(false);
  
   const handlerFinish = useCallback(
     async (values: any) => {
@@ -23,7 +20,7 @@ export const Participation = () => {
       console.log('dcdcd',temp)
       navigate('/participation-certificate');
     },
-    [navigate, setCurrentEvent, singleEvents],
+    [navigate,setParticipations],
   );
   return (
     <MainLayout>
@@ -114,8 +111,6 @@ export const Participation = () => {
 
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                 <Button
-                  disabled={loading}
-                  loading={loading}
                   style={{ width: '100%' }}
                   type="primary"
                   htmlType="submit">

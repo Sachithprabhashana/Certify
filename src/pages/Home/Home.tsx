@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { TeamOutlined, UserOutlined } from '@ant-design/icons';
+import { TeamOutlined, UserOutlined,UsergroupAddOutlined } from '@ant-design/icons';
 import { Button, Tooltip, Space } from 'antd';
 import { MainLayout } from '../../layout/mainLayout/MainLayout';
 import {useNavigate} from "react-router-dom";
@@ -56,7 +56,7 @@ export const Home: FC = () => {
                   }}
                 type="primary"
                 style={{ fontSize: 30, width: '300px', height: '100px' }}
-                icon={<TeamOutlined />}>
+                icon={<UsergroupAddOutlined />}>
                 Participation
               </Button>
             </Tooltip>

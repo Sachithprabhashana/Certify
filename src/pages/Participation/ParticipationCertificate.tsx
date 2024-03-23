@@ -6,7 +6,7 @@ import { UserOutlined } from '@ant-design/icons';
 import '../SingleEvent/SingleEvent.css';
 import { Button, Empty } from 'antd';
 import { useReactToPrint } from 'react-to-print';
-import background from '../../Components/CertificateBuilder/certificate.jpg';
+import background2 from '../../Components/CertificateBuilder/CertificateP.jpg';
 
 import { useCache } from '../../context/CacheContext';
 export const ParticipationCertificate: FC = () => {
@@ -40,7 +40,7 @@ export const ParticipationCertificate: FC = () => {
               <div
                 key={index}
                 style={{
-                  backgroundImage: `url(${background})`,
+                  backgroundImage: `url(${background2})`,
                   height: '8.27in',
                   width: '11.69in',
                   backgroundRepeat: 'no-repeat',
@@ -51,7 +51,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
-                    paddingTop: 345,
+                    paddingTop: 355,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -72,7 +72,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 260,
-                    paddingTop: 20,
+                    // paddingTop: 20,
                     // paddingBottom: -1,
 
                     fontStyle: 'italic',
@@ -83,8 +83,8 @@ export const ParticipationCertificate: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 11,
+                    paddingLeft: 445,
+                    paddingTop: 5,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -94,8 +94,8 @@ export const ParticipationCertificate: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 52,
+                    paddingLeft: 140,
+                    paddingTop: 19,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>

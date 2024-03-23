@@ -52,7 +52,17 @@ export const Participation = () => {
                       .toLowerCase()
                       .localeCompare((optionB?.label ?? '').toLowerCase())
                   }
-                  options={[{label: "Band", value: "Band"}]}
+                  options={[{label: "Drill show", value: "Drill show"},
+                  {label: "Senior Western Brass Band", value: "Senior Western Brass Band"},
+                  {label: "Junior Western Band", value: "Junior Western Band"},
+                  {label: "Cadet Corps", value: "Cadet Corps"},
+                  {label: "The scout team", value: "The scout team"},
+                  {label: "Prefect Team", value: "Prefect Team"},
+                  {label: "Photographic Society", value: "Photographic Society"},
+                  {label: "Organizing Committee", value: "Organizing Committee"},
+                  {label: "Taekwondo show", value: "Taekwondo show"},
+                  {label: "Gymnastics show", value: "Gymnastics show"},
+                  {label: "Dancing  group", value: "Dancing  group"}]}
                 />
               </Form.Item>
 

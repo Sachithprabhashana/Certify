@@ -37,9 +37,9 @@ export const ScorePrintPreview:FC <Props> = ({data,total}) => {
                 width: 200,
             },
             {
-                title: 'Zues',
-                dataIndex: 'zues',
-                key: 'zues',
+                title: 'Zeus',
+                dataIndex: 'zeus',
+                key: 'zeus',
                 width: 200,
             },
         ],
@@ -94,8 +94,8 @@ export const ScorePrintPreview:FC <Props> = ({data,total}) => {
                 <Card
                     style={{ backgroundColor: 'blue' }}
                     headStyle={{ color: 'white' }}
-                    title={'Zues'}>
-                    <h3 style={{ color: 'white',textAlign:'center'  }}>{total?.zuesScore}</h3>
+                    title={'Zeus'}>
+                    <h3 style={{ color: 'white',textAlign:'center'  }}>{total?.zeusScore}</h3>
                 </Card>
             </Space>
 

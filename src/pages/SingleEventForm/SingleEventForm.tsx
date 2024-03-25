@@ -61,7 +61,7 @@ export const SingleEventForm = () => {
               layout={'horizontal'}
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
-              initialValues={{ score: [{ zues: 0,venus:0,athens:0 }] }}
+              initialValues={{ score: [{ zeus: 0,venus:0,athens:0 }] }}
               autoComplete="off"
               onFinish={handlerFinish}
               onValuesChange={onValueChange}>
@@ -224,9 +224,9 @@ export const SingleEventForm = () => {
                         <Form.Item
                           required
                           {...restField}
-                          label={'Score for Zues'}
-                          name={[name, 'zues']}
-                          rules={[{ required: true, message: 'Missing Zues score' }]}>
+                          label={'Score for Zeus'}
+                          name={[name, 'zeus']}
+                          rules={[{ required: true, message: 'Missing Zeus score' }]}>
                           <InputNumber min={0} style={{ width: '100%'}} placeholder="Score" />
                         </Form.Item>
 

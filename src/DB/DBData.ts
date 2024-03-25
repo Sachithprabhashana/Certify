@@ -175,9 +175,9 @@ export const AGE_RANGE_JSON: any = {
   '109': ['12', '14', '16', '18', '20'],
 };
 
-export const HOUSE_NAMES: HouseDto[] = ['Zues', 'Athens', 'Venus'];
+export const HOUSE_NAMES: HouseDto[] = ['Zeus', 'Athens', 'Venus'];
 export const HOUSE_JSON = {
-  zues: 'Zues',
+  zeus: 'Zeus',
   athens: 'Athens',
   venus: 'Venus',
 }

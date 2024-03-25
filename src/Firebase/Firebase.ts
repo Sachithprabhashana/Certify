@@ -29,7 +29,7 @@ const handlerScoreData = (docs: any[]) => {
   const allEvents = [];
   let venusScore = 0;
   let athensScore = 0;
-  let zuesScore = 0;
+  let zeusScore = 0;
   for (const sEvent of docs) {
     const id = sEvent.id;
     const detail = sEvent.data();
@@ -39,7 +39,7 @@ const handlerScoreData = (docs: any[]) => {
     const zues = scoreData?.['zues'];
     venusScore = venusScore + venus;
     athensScore = athensScore + athens;
-    zuesScore = zuesScore + zues;
+    zeusScore = zeusScore + zues;
 
     allEvents.push({
       id,
@@ -50,7 +50,7 @@ const handlerScoreData = (docs: any[]) => {
       zues,
     });
   }
-  return { allEvents, venusScore, athensScore, zuesScore };
+  return { allEvents, venusScore, athensScore, zeusScore };
 };
 export const getScoreData = async () => {
   const eventsCol = collection(db, 'events');
@@ -61,10 +61,10 @@ export const getScoreData = async () => {
   const teamEventRes = handlerScoreData(teamEventSnapshot.docs);
   const venusScore = (singleEventRes?.venusScore ?? 0) + (teamEventRes?.venusScore ?? 0);
   const athensScore = (singleEventRes?.athensScore ?? 0) + (teamEventRes?.athensScore ?? 0);
-  const zuesScore = (singleEventRes?.zuesScore ?? 0) + (teamEventRes?.zuesScore ?? 0);
+  const zeusScore = (singleEventRes?.zeusScore ?? 0) + (teamEventRes?.zeusScore ?? 0);
   return {
     events: [...(singleEventRes?.allEvents ?? []), ...(teamEventRes?.allEvents ?? [])],
-    total: { venusScore, athensScore, zuesScore },
+    total: { venusScore, athensScore, zeusScore },
   };
 };
 export const getEvents = async () => {

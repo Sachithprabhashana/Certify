@@ -55,9 +55,9 @@ export const EventScore: FC = () => {
         width: 200,
       },
       {
-        title: 'Zues',
-        dataIndex: 'zues',
-        key: 'zues',
+        title: 'Zeus',
+        dataIndex: 'zeus',
+        key: 'zeus',
         width: 200,
       },
     ],
@@ -98,8 +98,8 @@ export const EventScore: FC = () => {
             <Card
               style={{ backgroundColor: 'blue' }}
               headStyle={{ color: 'white' }}
-              title={'Zues'}>
-              <h1 style={{ color: 'white',textAlign:'center'  }}>{total?.zuesScore}</h1>
+              title={'Zeus'}>
+              <h1 style={{ color: 'white',textAlign:'center'  }}>{total?.zeusScore}</h1>
             </Card>
           </Space>
 

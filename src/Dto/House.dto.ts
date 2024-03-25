@@ -1,1 +1,1 @@
-export type HouseDto = 'Zues' | 'Athens' | 'Venus';
+export type HouseDto = 'Zeus' | 'Athens' | 'Venus';

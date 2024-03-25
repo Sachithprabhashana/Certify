@@ -37,9 +37,17 @@ const handlerScoreData = (docs: any[]) => {
     const venus = scoreData?.['venus'];
     const athens = scoreData?.['athens'];
     const zues = scoreData?.['zues'];
+    const zeus = scoreData?.['zeus'];
+
     venusScore = venusScore + venus;
     athensScore = athensScore + athens;
-    zeusScore = zeusScore + zues;
+
+    if(zeus){
+      zeusScore = zeusScore + zeus;
+    }
+    if(zues){
+      zeusScore = zeusScore + zues;
+    }
 
     allEvents.push({
       id,

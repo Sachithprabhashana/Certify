@@ -51,7 +51,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
-                    paddingTop: 355,
+                    paddingTop: 350,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -84,7 +84,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 445,
-                    paddingTop: 5,
+                    paddingTop: 10,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -95,7 +95,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 140,
-                    paddingTop: 19,
+                    paddingTop: 24,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>

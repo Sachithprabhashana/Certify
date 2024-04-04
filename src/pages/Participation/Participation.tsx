@@ -55,6 +55,7 @@ export const Participation = () => {
                   options={[{label: "Drill show", value: "Drill show"},
                   {label: "Senior Western Brass Band", value: "Senior Western Brass Band"},
                   {label: "Junior Western Band", value: "Junior Western Band"},
+                  {label: "Western Brass Band", value: "Western Brass Band"},
                   {label: "Cadet Corps", value: "Cadet Corps"},
                   {label: "The scout team", value: "The scout team"},
                   {label: "Prefect Team", value: "Prefect Team"},

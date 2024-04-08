@@ -63,6 +63,7 @@ export const Participation = () => {
                   {label: "Organizing Committee", value: "Organizing Committee"},
                   {label: "Taekwondo show", value: "Taekwondo show"},
                   {label: "Gymnastics show", value: "Gymnastics show"},
+                  {label: "Kung-Fu Show", value: "Kung-Fu Show"},
                   {label: "Dancing  group", value: "Dancing  group"}]}
                 />
               </Form.Item>

@@ -57,6 +57,7 @@ export const Participation = () => {
                   {label: "Junior Western Band", value: "Junior Western Band"},
                   {label: "Western Brass Band", value: "Western Brass Band"},
                   {label: "Cadet Corps", value: "Cadet Corps"},
+                  {label: "Scout Team", value: "Scout Team"},
                   {label: "The scout team", value: "The scout team"},
                   {label: "Prefect Team", value: "Prefect Team"},
                   {label: "Photographic Society", value: "Photographic Society"},

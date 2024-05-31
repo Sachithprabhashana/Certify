@@ -1,6 +1,6 @@
 import { SingleEventDto } from '../Dto/SingleEvent.dto';
 import { TeamEventDto } from '../Dto/TeamEvent.dto';
-import {HouseDto} from "../Dto/House.dto";
+import { HouseDto } from "../Dto/House.dto";
 
 export const SingleEventDBData: SingleEventDto[] = [
   {
@@ -98,7 +98,27 @@ export const SingleEventDBData: SingleEventDto[] = [
   {
     value: '24',
     label: '3000 Metres',
+  },
+  {
+    value: '25',
+    label: 'Swimming 400m Open Freestyle'
   }
+  ,
+  {
+    value: '26',
+    label: 'Swimming Brest Stock',
+  }
+  ,
+  {
+    value: '27',
+    label: 'Swimming Medley Relay 50*4',
+  }
+  ,
+  {
+    value: '28',
+    label: 'Swimming Open Relay 50*4',
+  }
+
 ];
 
 export const TeamEventDBData: TeamEventDto[] = [
@@ -143,7 +163,7 @@ export const TeamEventDBData: TeamEventDto[] = [
     label: 'Karate',
   },
 ];
-export const AGE_RANGES = ['Open','12','13', '14','15', '16','17', '18','19', '20','21'];
+export const AGE_RANGES = ['Open', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
 export const AGE_RANGE_JSON: any = {
   '1': ['13', '15', '17', '20'],
   '2': ['13', '15', '17', '20'],

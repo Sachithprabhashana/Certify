@@ -118,6 +118,11 @@ export const SingleEventDBData: SingleEventDto[] = [
     value: '28',
     label: 'Swimming Open Relay 50*4',
   }
+  ,
+  {
+    value: '29',
+    label: 'Swimming',
+  }
 
 ];
 

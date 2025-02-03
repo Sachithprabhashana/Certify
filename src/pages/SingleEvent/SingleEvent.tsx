@@ -50,8 +50,8 @@ export const SingleEvent: FC = () => {
                   className="Student_name"
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 140,
-                    paddingTop: 345,
+                    paddingLeft: 530,
+                    paddingTop: 337,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -60,7 +60,7 @@ export const SingleEvent: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
+                    paddingLeft: 470,
                     paddingTop: 14,
                     // paddingBottom: 2,
                     fontStyle: 'italic',
@@ -71,8 +71,8 @@ export const SingleEvent: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 20,
+                    paddingLeft: 450,
+                    paddingTop: 13,
                     // paddingBottom: -1,
 
                     fontStyle: 'italic',
@@ -83,8 +83,8 @@ export const SingleEvent: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 11,
+                    paddingLeft: 460,
+                    paddingTop: 13,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -93,8 +93,8 @@ export const SingleEvent: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
-                    paddingTop: 17,
+                    paddingLeft: 450,
+                    paddingTop: 13,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -103,7 +103,7 @@ export const SingleEvent: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 260,
+                    paddingLeft: 460,
                     paddingTop: 52,
                     fontStyle: 'italic',
                     fontSize: '20px',
@@ -125,7 +125,8 @@ export const SingleEvent: FC = () => {
         </div>
       ) : (
         <Empty style={{ marginTop: 30 }} description={'No event for print'} />
-      )}
-    </MainLayout>
+      )
+      }
+    </MainLayout >
   );
 };

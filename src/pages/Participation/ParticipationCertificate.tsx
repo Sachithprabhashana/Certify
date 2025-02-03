@@ -50,8 +50,8 @@ export const ParticipationCertificate: FC = () => {
                   className="Student_name"
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 140,
-                    paddingTop: 350,
+                    paddingLeft: 350,
+                    paddingTop: 370,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
@@ -83,26 +83,26 @@ export const ParticipationCertificate: FC = () => {
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 445,
-                    paddingTop: 10,
+                    paddingLeft: 650,
+                    paddingTop: 1,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
                   {participations?.event}
                 </div>
-               
+
                 <div
                   style={{
                     fontFamily: 'Shantell Sans',
-                    paddingLeft: 140,
-                    paddingTop: 24,
+                    paddingLeft: 350,
+                    paddingTop: 10,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>
                   {v.achievement ?? '-'}
                 </div>
 
-            
+
               </div>
             ))}
           </div>

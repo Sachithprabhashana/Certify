@@ -10,17 +10,17 @@ import { useNavigate } from 'react-router-dom';
 import { CertificateDto } from '../../Dto/Certificate.dto';
 
 export const Participation = () => {
-  const { setParticipations} = useCache();
+  const { setParticipations } = useCache();
   const navigate = useNavigate();
- 
+
   const handlerFinish = useCallback(
     async (values: any) => {
-      const temp: CertificateDto= { ...values };
+      const temp: CertificateDto = { ...values };
       setParticipations(temp)
-      console.log('dcdcd',temp)
+      console.log('dcdcd', temp)
       navigate('/participation-certificate');
     },
-    [navigate,setParticipations],
+    [navigate, setParticipations],
   );
   return (
     <MainLayout>
@@ -32,7 +32,7 @@ export const Participation = () => {
               layout={'horizontal'}
               labelCol={{ span: 8 }}
               wrapperCol={{ span: 16 }}
-              initialValues={{ score: [{ zues: 0,venus:0,athens:0 }] }}
+              initialValues={{ score: [{ zeus: 0, venus: 0, athens: 0 }] }}
               autoComplete="off"
               onFinish={handlerFinish}>
               <Form.Item
@@ -52,24 +52,24 @@ export const Participation = () => {
                       .toLowerCase()
                       .localeCompare((optionB?.label ?? '').toLowerCase())
                   }
-                  options={[{label: "Drill show", value: "Drill show"},
-                  {label: "Senior Western Brass Band", value: "Senior Western Brass Band"},
-                  {label: "Junior Western Band", value: "Junior Western Band"},
-                  {label: "Western Brass Band", value: "Western Brass Band"},
-                  {label: "Cadet Corps", value: "Cadet Corps"},
-                  {label: "Scout Team", value: "Scout Team"},
-                  {label: "The scout team", value: "The scout team"},
-                  {label: "Prefect Team", value: "Prefect Team"},
-                  {label: "Photographic Society", value: "Photographic Society"},
-                  {label: "Organizing Committee", value: "Organizing Committee"},
-                  {label: "Taekwondo show", value: "Taekwondo show"},
-                  {label: "Gymnastics show", value: "Gymnastics show"},
-                  {label: "Kung-Fu Show", value: "Kung-Fu Show"},
-                  {label: "Dancing  group", value: "Dancing  group"}]}
+                  options={[{ label: "Drill show", value: "Drill show" },
+                  { label: "Senior Western Brass Band", value: "Senior Western Brass Band" },
+                  { label: "Junior Western Band", value: "Junior Western Band" },
+                  { label: "Western Brass Band", value: "Western Brass Band" },
+                  { label: "Cadet Corps", value: "Cadet Corps" },
+                  { label: "Scout Team", value: "Scout Team" },
+                  { label: "The scout team", value: "The scout team" },
+                  { label: "Prefect Team", value: "Prefect Team" },
+                  { label: "Photographic Society", value: "Photographic Society" },
+                  { label: "Organizing Committee", value: "Organizing Committee" },
+                  { label: "Taekwondo show", value: "Taekwondo show" },
+                  { label: "Gymnastics show", value: "Gymnastics show" },
+                  { label: "Kung-Fu Show", value: "Kung-Fu Show" },
+                  { label: "Dancing  group", value: "Dancing  group" }]}
                 />
               </Form.Item>
 
-          
+
 
               <Form.List
                 name="winners"
@@ -93,7 +93,7 @@ export const Participation = () => {
                           rules={[{ required: true, message: 'Missing name' }]}>
                           <Input placeholder="Name" />
                         </Form.Item>
-                       
+
                         <Form.Item
                           {...restField}
                           label={'Achievement'}
@@ -120,7 +120,7 @@ export const Participation = () => {
                   </>
                 )}
               </Form.List>
-            
+
 
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                 <Button

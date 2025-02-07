@@ -51,7 +51,7 @@ export const SingleEvent: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 530,
-                    paddingTop: 330,
+                    paddingTop: 334,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>

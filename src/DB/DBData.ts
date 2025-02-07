@@ -126,7 +126,32 @@ export const SingleEventDBData: SingleEventDto[] = [
   ,
   {
     value: '30',
-    label: 'Swimming 50m Free style',
+    label: 'Swimming Free Style 50m'
+  }
+  ,
+  {
+    value: '31',
+    label: 'Swimming Free style 100m',
+  }
+  ,
+  {
+    value: '32',
+    label: 'Swimming Backstroke 50m',
+  }
+  ,
+  {
+    value: '33',
+    label: 'Swimming Backstrock 100m',
+  }
+  ,
+  {
+    value: '34',
+    label: 'Swimming Breaststroke 50m',
+  }
+  ,
+  {
+    value: '35',
+    label: 'Swimming Breaststroke 100m',
   }
 
 ];

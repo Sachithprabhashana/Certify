@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="changes">
+    <list default="true" id="4c0e4493-94c1-4e99-9701-12b48d24e0b1" name="Default Changelist" comment="font changes 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleEvent/SingleEvent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +50,14 @@
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kaveendraperera/Documents/kaveendra-dev/Certify/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\certify\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -126,6 +130,40 @@
       <workItem from="1678029479332" duration="1566000" />
       <workItem from="1678092512854" duration="406000" />
       <workItem from="1678264183959" duration="2384000" />
+      <workItem from="1678269096446" duration="888000" />
+      <workItem from="1678461622148" duration="3482000" />
+      <workItem from="1678597467571" duration="600000" />
+      <workItem from="1678799229923" duration="14000" />
+      <workItem from="1679332944908" duration="24000" />
+      <workItem from="1679333742613" duration="5000" />
+      <workItem from="1679336774257" duration="22000" />
+      <workItem from="1679371918383" duration="13000" />
+      <workItem from="1680790901314" duration="113000" />
+      <workItem from="1684332033330" duration="595000" />
+      <workItem from="1686247777261" duration="24000" />
+      <workItem from="1686452175554" duration="42000" />
+      <workItem from="1686707938052" duration="17000" />
+      <workItem from="1695825448839" duration="8068000" />
+      <workItem from="1698635185502" duration="58000" />
+      <workItem from="1698815423460" duration="10000" />
+      <workItem from="1699368299251" duration="37000" />
+      <workItem from="1699369986813" duration="1871000" />
+      <workItem from="1699376960054" duration="7834000" />
+      <workItem from="1700928130499" duration="4000" />
+      <workItem from="1703573777595" duration="2000" />
+      <workItem from="1705421182771" duration="25000" />
+      <workItem from="1713587748950" duration="8000" />
+      <workItem from="1715686644988" duration="5000" />
+      <workItem from="1717816383320" duration="41000" />
+      <workItem from="1719246204208" duration="20000" />
+      <workItem from="1719246237075" duration="9000" />
+      <workItem from="1719246425810" duration="256000" />
+      <workItem from="1723131886006" duration="10000" />
+      <workItem from="1723429358987" duration="10000" />
+      <workItem from="1723873488459" duration="5000" />
+      <workItem from="1724906788006" duration="3000" />
+      <workItem from="1724922815750" duration="5000" />
+      <workItem from="1726477381495" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="app config">
       <created>1677304228367</created>
@@ -288,7 +326,42 @@
       <option name="project" value="LOCAL" />
       <updated>1678265901578</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="data changes">
+      <created>1678269435625</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1678269435625</updated>
+    </task>
+    <task id="LOCAL-00025" summary="data changes">
+      <created>1678463747511</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1678463747511</updated>
+    </task>
+    <task id="LOCAL-00026" summary="font changes">
+      <created>1678464382811</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1678464382811</updated>
+    </task>
+    <task id="LOCAL-00027" summary="font changes 2">
+      <created>1678464512085</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1678464512085</updated>
+    </task>
+    <task id="LOCAL-00028" summary="font changes 2">
+      <created>1678464910565</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1678464910565</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +392,9 @@
     <MESSAGE value="score added" />
     <MESSAGE value="fixes" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="data changes" />
+    <MESSAGE value="font changes" />
+    <MESSAGE value="font changes 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="font changes 2" />
   </component>
 </project>

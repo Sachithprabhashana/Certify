@@ -36,17 +36,13 @@ const handlerScoreData = (docs: any[]) => {
     const scoreData = detail.score[0];
     const venus = scoreData?.['venus'];
     const athens = scoreData?.['athens'];
-    const zues = scoreData?.['zues'];
     const zeus = scoreData?.['zeus'];
 
     venusScore = venusScore + venus;
     athensScore = athensScore + athens;
 
-    if(zeus){
+    if (zeus) {
       zeusScore = zeusScore + zeus;
-    }
-    if(zues){
-      zeusScore = zeusScore + zues;
     }
 
     allEvents.push({
@@ -55,7 +51,7 @@ const handlerScoreData = (docs: any[]) => {
       ageRange: detail.ageRange,
       venus,
       athens,
-      zues,
+      zeus,
     });
   }
   return { allEvents, venusScore, athensScore, zeusScore };

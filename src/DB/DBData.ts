@@ -152,6 +152,15 @@ export const SingleEventDBData: SingleEventDto[] = [
   {
     value: '35',
     label: 'Swimming Breaststroke 100m',
+  },
+  {
+    value: '36',
+    label: 'Swimming Butterfly 50m',
+  }
+  ,
+  {
+    value: '37',
+    label: 'Swimming Butterfly 100m',
   }
 
 ];

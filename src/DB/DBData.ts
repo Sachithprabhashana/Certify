@@ -53,7 +53,7 @@ export const SingleEventDBData: SingleEventDto[] = [
   },
   {
     value: '13',
-    label: 'Tripple Jump',
+    label: 'Triple Jump',
   },
   {
     value: '14',
@@ -250,5 +250,5 @@ export const HOUSE_JSON = {
   venus: 'Venus',
 }
 export const WINNER_PLACES: string[] = ['1st', '2nd', '3rd', 'Participation'];
-export const TEAM_WINNER_PLACES: string[] = ['Champion', 'RunnersUp', '3rd Place', 'Best Player'];
+export const TEAM_WINNER_PLACES: string[] = ['Champion', 'RunnersUp', '3rd Place', 'Best player'];
 

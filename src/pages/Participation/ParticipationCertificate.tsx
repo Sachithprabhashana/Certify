@@ -108,7 +108,7 @@ export const ParticipationCertificate: FC = () => {
           </div>
         </div>
       ) : (
-        <Empty style={{ marginTop: 30 }} description={'No event for print'} />
+        <Empty style={{ marginTop: 30 }} description={'No event for print.'} />
       )}
     </MainLayout>
   );

@@ -51,7 +51,7 @@ export const ParticipationCertificate: FC = () => {
                   style={{
                     fontFamily: 'Shantell Sans',
                     paddingLeft: 350,
-                    paddingTop: 370,
+                    paddingTop: 375,
                     fontStyle: 'italic',
                     fontSize: '20px',
                   }}>

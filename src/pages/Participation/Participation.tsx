@@ -70,6 +70,7 @@ export const Participation = () => {
                   { label: "Welcome Dance", value: "Welcome Dance" },
                   { label: "Media Unit", value: "Media Unit" },
                   { label: "Karate", value: "Karate" },
+                  { label: "March past", value: "March past" },
                   { label: "The Theme Song", value: "The Theme Song" },
                   { label: "Dancing  group", value: "Dancing  group" }]}
                 />

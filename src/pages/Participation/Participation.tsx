@@ -72,7 +72,7 @@ export const Participation = () => {
                   { label: "Karate", value: "Karate" },
                   { label: "March past", value: "March past" },
                   { label: "The Theme Song", value: "The Theme Song" },
-                  { label: "Dancing  group", value: "Dancing  group" }]}
+                  { label: "Dancing group", value: "Dancing group" }]}
                 />
               </Form.Item>
 
